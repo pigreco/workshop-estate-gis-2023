@@ -25,7 +25,7 @@
 
 **DESCRIZIONE**: <br> Hai mai utilizzato funzioni avanzate all’interno del software open source più famoso del web? Avanziamo con un flusso di lavoro completamente sviluppato in ambiente **QGIS**, che grazie allo straordinario contributo di **Salvatore Fiandaca** (_pigrecoinfinito.com_) non ha più limiti. Dal know-how di _pigrecoinfinito_, affronteremo esempi pratici su come lavorare al meglio con il _**Model builder**_, come usare il _**widget QML**_ per una gestione personalizzata dei progetti e dei dati e vedremo come lavorare con il _**compositore per layout di stampa**_ professionali.
 
-<p align="center"><a href="https://mastergiscience.it/9821-2/" target="_blank"><img src="./imgs/12luglio_fiandaca/vb_fiandaca.jpg" width="700" title="EstateGIS 2023"></a></p>
+<p align="center"><a href="https://www.facebook.com/events/267322345814499/267324065814327/?ref=newsfeed" target="_blank"><img src="./imgs/12luglio_fiandaca/vb_fiandaca.jpg" width="700" title="EstateGIS 2023"></a></p>
 
 ---
 
