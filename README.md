@@ -64,7 +64,8 @@ ESEMPIO
 
 ### WidGet QML di QGIS
 
-[DOC QGIS](https://docs.qgis.org/3.28/en/docs/user_manual/working_with_vector/vector_properties.html?highlight=widget%20qml#id122)
+- [DOC QGIS](https://docs.qgis.org/3.28/en/docs/user_manual/working_with_vector/vector_properties.html?highlight=widget%20qml#id122)
+- [Blogpost](https://pigrecoinfinito.com/2021/07/15/dati-sulla-vaccinazione-in-sicilia/)
 #### Che cosa è?
 
 Per impostazione predefinita, quando fai clic su una caratteristica con lo strumento _**Identifica caratteristiche**_ ![](https://docs.qgis.org/3.28/en/_images/mActionIdentify.png) o passi la tabella degli attributi alla modalità di visualizzazione modulo, QGIS visualizza un modulo base con widget predefiniti (generalmente caselle di selezione e caselle di testo — ogni campo è rappresentato su una riga dedicata dal suo label accanto al widget). Se le relazioni sono impostate sul livello, i campi dei livelli di riferimento vengono visualizzati in una cornice incorporata nella parte inferiore del modulo, seguendo la stessa struttura di base.
@@ -75,7 +76,8 @@ ESEMPIO
 
 ### Compositore di stampe di QGIS
 
-[DOC QGIS](https://docs.qgis.org/3.28/en/docs/user_manual/print_composer/overview_composer.html)
+- [DOC QGIS](https://docs.qgis.org/3.28/en/docs/user_manual/print_composer/overview_composer.html)
+- [Blogpost](https://pigrecoinfinito.com/?s=atlante)
 
 #### Che cosa è?
 
