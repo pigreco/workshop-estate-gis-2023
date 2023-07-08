@@ -242,4 +242,4 @@ A partire dallo shapefile delle regioni italiane (20 regioni ISTAT 2023) e dalle
 
 # DISCLAIMER
 
-Il presente contenuto è stato realizzato/aggiornato da _**Salvatore Fiandaca**_ (all'interno del **Workshop Estate GIS 2023**) nel mese di Luglio 2023 utilizzando [QGIS 3.28 Firenze LTR](https://qgis.org/it/site/).
+Il presente contenuto è stato realizzato/aggiornato da _**Salvatore Fiandaca**_ (all'interno del **Workshop Estate GIS 2023**) nel mese di Luglio 2023 utilizzando [QGIS 3.28 Firenze LTR](https://qgis.org/it/site/) i dati sono ISTAT 2023.
