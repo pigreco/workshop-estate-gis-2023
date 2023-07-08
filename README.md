@@ -20,6 +20,7 @@
       - [Che cosa è il Print Layout di QGIS?](#che-cosa-è-il-print-layout-di-qgis)
   - [DATI e PROGETTI](#dati-e-progetti)
   - [RIFERIMENTI UTILI](#riferimenti-utili)
+- [DISCLAIMER](#disclaimer)
 
 <!-- /TOC -->
 
@@ -53,6 +54,8 @@
 - Windows 10 64b - come SO
 - [`QGIS 3.28 LTR Firenze`](https://qgis.org/it/site/) <img src = "./imgs/qgis-icon32.png" width =15> 
 
+↑ [torna su](#workshop-estate-gis-2023) ↑
+
 ## Programma
 
 ### Modellatore grafico di QGIS
@@ -80,6 +83,8 @@ INTERFACCIA PROCESSING:<br>
 
 ERRORI:<br>
 ![](imgs/screenshot/img_03.png)
+
+↑ [torna su](#workshop-estate-gis-2023) ↑
 
 ### WidGet QML di QGIS
 
@@ -190,6 +195,8 @@ ChartView {
 
 ![](imgs/screenshot/img_05.png)
 
+↑ [torna su](#workshop-estate-gis-2023) ↑
+
 ### Compositore di stampe di QGIS
 
 - [DOC QGIS](https://docs.qgis.org/3.28/en/docs/user_manual/print_composer/overview_composer.html)
@@ -212,18 +219,27 @@ A partire dallo shapefile delle regioni italiane (20 regioni ISTAT 2023) e dalle
 3. creare un layout di stampa;
 4. creare una atlas;
 5. aggiungere un grafico Bar Plot usando il plugin DataPlotly
+6. Regioni URL : <https://gitlab.com/pigr3co/limiti_istat_2021/-/raw/main/Reg01012021_WGS84.geojson>
+7. Province URL : <https://gitlab.com/pigr3co/limiti_istat_2021/-/raw/main/ProvCM01012021_WGS84.geojson>
 
 ![](imgs/screenshot/img_06.png)
 
 ![](imgs/screenshot/img_07.png)
 
+↑ [torna su](#workshop-estate-gis-2023) ↑
+
 ## DATI e PROGETTI
 
-- []
+- <https://github.com/pigreco/workshop-estate-gis-2023/raw/main/risorse.zip>
 
 ## RIFERIMENTI UTILI
 
-- QGIS : <https://www.qgis.org/it/site/>
-- DOC QGIS : <https://docs.qgis.org/3.28/it/docs/user_manual/>
-- BLOG PIGRECOINFINITO : <https://pigrecoinfinito.com/>
-- MASTER GISCIENCE : <https://mastergiscience.it/9821-2/>
+- **QGIS** : <https://www.qgis.org/it/site/>
+- **DOC QGIS** : <https://docs.qgis.org/3.28/it/docs/user_manual/>
+- **BLOG PIGRECOINFINITO** : <https://pigrecoinfinito.com/>
+- **MASTER GISCIENCE** : <https://mastergiscience.it/9821-2/>
+- **ISTAT** : <https://www.istat.it/it/archivio/222527>
+
+# DISCLAIMER
+
+Il presente contenuto è stato realizzato/aggiornato da _**Salvatore Fiandaca**_ (all'interno del **Workshop Estate GIS 2023**) nel mese di Luglio 2023 utilizzando [QGIS 3.28 Firenze LTR](https://qgis.org/it/site/).
