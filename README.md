@@ -223,7 +223,7 @@ A partire dallo shapefile delle regioni italiane (20 regioni ISTAT 2023) e dalle
 
 ## RIFERIMENTI UTILI
 
-- QGIS : 
-- DOC QGIS : 
-- BLOG PIGRECOINFINITO : 
-- 
+- QGIS : <https://www.qgis.org/it/site/>
+- DOC QGIS : <https://docs.qgis.org/3.28/it/docs/user_manual/>
+- BLOG PIGRECOINFINITO : <https://pigrecoinfinito.com/>
+- MASTER GISCIENCE : <https://mastergiscience.it/9821-2/>
