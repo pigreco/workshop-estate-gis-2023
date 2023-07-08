@@ -18,6 +18,8 @@
       - [cosa fa?](#cosa-fa-1)
     - [Compositore di stampe di QGIS](#compositore-di-stampe-di-qgis)
       - [Che cosa è il Print Layout di QGIS?](#che-cosa-è-il-print-layout-di-qgis)
+  - [DATI e PROGETTI](#dati-e-progetti)
+  - [RIFERIMENTI UTILI](#riferimenti-utili)
 
 <!-- /TOC -->
 
@@ -203,3 +205,25 @@ Il Print Layout di QGIS utilizza un'interfaccia intuitiva e facile da usare, che
 
 ESEMPIO
 
+A partire dallo shapefile delle regioni italiane (20 regioni ISTAT 2023) e dalle relative province (107 province ISTAT 2023), creare un progetto QGIS che stampi 20 pagine, una per ogni regione, in cui sono visibili le province e il relativo grafico a barre che rappresenta una variabile provinciale.
+
+1. importare i due shapefile in QGIS;
+2. creare una relazione di progetto;
+3. creare un layout di stampa;
+4. creare una atlas;
+5. aggiungere un grafico Bar Plot usando il plugin DataPlotly
+
+![](imgs/screenshot/img_06.png)
+
+![](imgs/screenshot/img_07.png)
+
+## DATI e PROGETTI
+
+- []
+
+## RIFERIMENTI UTILI
+
+- QGIS : 
+- DOC QGIS : 
+- BLOG PIGRECOINFINITO : 
+- 
