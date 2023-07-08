@@ -12,6 +12,7 @@
   - [Programma](#programma)
     - [Modellatore grafico di QGIS](#modellatore-grafico-di-qgis)
       - [Che cosa è?](#che-cosa-è)
+      - [Cosa fa?](#cosa-fa)
     - [WidGet QML di QGIS](#widget-qml-di-qgis)
       - [Che cosa è?](#che-cosa-è-1)
     - [Compositore di stampe di QGIS](#compositore-di-stampe-di-qgis)
@@ -56,11 +57,26 @@
 [DOC QGIS](https://docs.qgis.org/3.28/en/docs/user_manual/processing/modeler.html?highlight=modeler%20builder)
 #### Che cosa è?
 
-Il modellatore grafico consente di creare modelli complessi utilizzando un'interfaccia semplice e facile da usare. Quando si lavora con un GIS, la maggior parte delle operazioni di analisi non sono isolate, piuttosto fanno parte di una catena di operazioni. Utilizzando il modellatore grafico , quella catena di operazioni può essere racchiusa in un singolo processo, rendendo conveniente l'esecuzione successiva con un diverso insieme di input. Indipendentemente dal numero di passaggi e dai diversi algoritmi che comporta, un modello viene eseguito come un singolo algoritmo, risparmiando tempo e fatica.
+Il modellatore grafico di QGIS è uno strumento integrato nell'interfaccia utente di QGIS che consente agli utenti di creare flussi di lavoro personalizzati in modo visuale e interattivo. Questo strumento è particolarmente utile per l'automatizzazione di processi complessi, permettendo di risparmiare tempo e aumentando l'efficienza del lavoro. continua [qui](https://poe.com/s/4Z6ce392paNJW90c7GUg)
 
-...
+#### Cosa fa?
+
+Il modellatore grafico consente di creare modelli complessi utilizzando un'interfaccia semplice e facile da usare. Quando si lavora con un GIS, la maggior parte delle operazioni di analisi non sono isolate, piuttosto fanno parte di una catena di operazioni. Utilizzando il modellatore grafico, quella catena di operazioni può essere racchiusa in un singolo processo, rendendo conveniente l'esecuzione successiva con un diverso insieme di input. Indipendentemente dal numero di passaggi e dai diversi algoritmi che comporta, un modello viene eseguito come un singolo algoritmo, risparmiando tempo e fatica.
+
+![](imgs/screenshot/img_01.png)
 
 ESEMPIO
+
+Ricerca errori lungo i bordi delle sezioni di taglio.
+
+Contesto:<br>
+Immaginare di lavorare con un team di persone per la realizzazione di una carta uso del suolo, l'area da analizzare è grande e si decide di suddividerla in sezioni più piccole. Le sezione vengono assegnate a vari operatori, alla fine della fotointerpretazione, le sezione verranno riassemblate per riottenere l'area complessiva iniziale.
+
+INTERFACCIA PROCESSING:<br>
+![](imgs/screenshot/img_02.png)
+
+ERRORI:<br>
+![](imgs/screenshot/img_03.png)
 
 ### WidGet QML di QGIS
 

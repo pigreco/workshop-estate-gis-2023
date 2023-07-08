@@ -1,0 +1,635 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="native:deleteduplicategeometries_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:deleteduplicategeometries"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1358.607594936709"/>
+        <Option name="component_pos_y" type="double" value="716.9062821349341"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Elimina geometrie duplicate"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="1132.5041889599374"/>
+      <Option name="component_pos_y" type="double" value="655.9556048544956"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:deleteduplicategeometries_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="Errori" type="Map">
+          <Option name="child_id" type="QString" value="native:deleteduplicategeometries_1"/>
+          <Option name="color" type="QString" value=""/>
+          <Option name="comment" type="Map">
+            <Option name="color" type="QString" value=""/>
+            <Option name="component_description" type="QString" value=""/>
+            <Option name="component_height" type="double" value="60"/>
+            <Option name="component_pos_x" type="double" value="0"/>
+            <Option name="component_pos_y" type="double" value="0"/>
+            <Option name="component_width" type="double" value="100"/>
+            <Option name="outputs_collapsed" type="bool" value="true"/>
+            <Option name="parameters_collapsed" type="bool" value="true"/>
+          </Option>
+          <Option name="component_description" type="QString" value="Errori"/>
+          <Option name="component_height" type="double" value="30"/>
+          <Option name="component_pos_x" type="double" value="1308.107594936709"/>
+          <Option name="component_pos_y" type="double" value="683.4876523554744"/>
+          <Option name="component_width" type="double" value="97"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="Errori"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+          <Option name="outputs_collapsed" type="bool" value="true"/>
+          <Option name="parameters_collapsed" type="bool" value="true"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:explodelines_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:difference_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:difference"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1405.607594936709"/>
+        <Option name="component_pos_y" type="double" value="552.7594936708861"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Differenza"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="896.6075949367089"/>
+      <Option name="component_pos_y" type="double" value="315.75949367088606"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:difference_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="GRID_SIZE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:polygonstolines_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAY" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:polygonstolines_3"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:dissolve_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:dissolve"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="320"/>
+        <Option name="component_pos_y" type="double" value="115"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="DissolviPoligoniTYN"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="179"/>
+      <Option name="component_pos_y" type="double" value="203"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:dissolve_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="StringList">
+              <Option type="QString" value="TYN"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="input_poligoni_fotointerpretate"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="SEPARATE_DISJOINT" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:dissolve_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:dissolve"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1405.607594936709"/>
+        <Option name="component_pos_y" type="double" value="360.2658227848102"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Dissolvi SEZ"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="437.6075949367089"/>
+      <Option name="component_pos_y" type="double" value="203.2658227848102"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:dissolve_2"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="StringList">
+              <Option type="QString" value=""/>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="input_sezioni_di_interesse"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="SEPARATE_DISJOINT" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:explodelines_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:explodelines"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1358.607594936709"/>
+        <Option name="component_pos_y" type="double" value="660.2658227848102"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Esplodere linee"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="933.2385332115359"/>
+      <Option name="component_pos_y" type="double" value="598.9062821349341"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:explodelines_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:intersection_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:intersection_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:intersection"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1146"/>
+        <Option name="component_pos_y" type="double" value="695"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Intersezione"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="721.6075949367089"/>
+      <Option name="component_pos_y" type="double" value="542.2658227848102"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:intersection_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="GRID_SIZE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:snapgeometries_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_FIELDS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="List">
+              <Option type="QString" value=""/>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="OVERLAY" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:polygonstolines_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="OVERLAY_FIELDS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="List">
+              <Option type="QString" value=""/>
+            </Option>
+          </Option>
+        </Option>
+        <Option name="OVERLAY_FIELDS_PREFIX" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:polygonstolines_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:polygonstolines"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="760"/>
+        <Option name="component_pos_y" type="double" value="315"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Da poligoni a linee TYN"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="199.2658227848101"/>
+      <Option name="component_pos_y" type="double" value="437.44303797468353"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:polygonstolines_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:dissolve_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:polygonstolines_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:polygonstolines"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1013"/>
+        <Option name="component_pos_y" type="double" value="460"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Da poligoni a linee SEZ"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="729.6075949367089"/>
+      <Option name="component_pos_y" type="double" value="90.88607594936707"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:polygonstolines_2"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="input_sezioni_di_interesse"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:polygonstolines_3" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:polygonstolines"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1405.607594936709"/>
+        <Option name="component_pos_y" type="double" value="446.759493670886"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Da poligoni a linee SEZ2"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="652.6075949367089"/>
+      <Option name="component_pos_y" type="double" value="259.759493670886"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:polygonstolines_3"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:dissolve_2"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:snapgeometries_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="native:snapgeometries"/>
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="1146"/>
+        <Option name="component_pos_y" type="double" value="470"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="Aggancia geometrie al vettore SEZ"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="715.6582278481014"/>
+      <Option name="component_pos_y" type="double" value="435.75949367088606"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="native:snapgeometries_1"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="BEHAVIOR" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:difference_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="REFERENCE_LAYER" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="native:dissolve_1"/>
+            <Option name="output_name" type="QString" value="OUTPUT"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="TOLERANCE" type="List">
+          <Option type="Map">
+            <Option name="expression" type="QString" value=" @tolleranza "/>
+            <Option name="source" type="int" value="3"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues" type="Map">
+    <Option name="errori" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option name="fileEncoding" type="QString" value="System"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option name="active" type="bool" value="true"/>
+          <Option name="type" type="int" value="1"/>
+          <Option name="val" type="QString" value="TEMPORARY_OUTPUT"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="input_poligoni_fotointerpretate" type="QString" value="14sezTest_3eb99817_9b62_42c7_9153_998d34eb1c1f"/>
+    <Option name="input_sezioni_di_interesse" type="QString" value="pasted_features_e09161e1_1199_453b_a287_6876ce842af8"/>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help" type="Map">
+    <Option name="ALG_CREATOR" type="QString" value="Ing. Totò Fiandaca &#xa;&lt;br>Planetek Italia&lt;\br>"/>
+    <Option name="ALG_DESC" type="QString" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Calibri'; font-size:12pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;span style=&quot; font-size:18pt; font-weight:600; font-style:italic;&quot;>Check bordi interni&lt;/span>&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>L'algoritmo di Processing crea delle linee di intersezione dovute alle sovrapposizione tra le linee di bordo delle sezioni e i poligoni fotointerpretati.&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Queste linee rappresentano degli errori:&lt;/p>&#xa;&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;>&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>quando la classificazione dei poligoni lungo i bordi non rispetta la continuità della classe TYN;&lt;/li>&#xa;&lt;li style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>quando si verificano dei salti inaspettati lungo il perimetro del poligono in corrispondenza dei bordi (noSnap);&lt;/li>&lt;/ul>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+    <Option name="ALG_HELP_CREATOR" type="QString" value="Ing. Totò Fiandaca "/>
+    <Option name="ALG_VERSION" type="QString" value="checkBordi_v01"/>
+    <Option name="EXAMPLES" type="QString" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'Calibri'; font-size:12pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>Determina un vettore linestring che evidenzia gli errori nella formazione dei poligoni fotointerpretati:&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;img src=&quot;data:image/7762.PNG;base64,i&#xa;VBORw0KGgoAAAANSUhEUgAAAcQAAAEwCAYAAAApXAEQAAAAymlDQ1BDdXN0b20AABiVY2Bg3M4ABEwOD&#xa;Ay5eSVFQe5OChGRUQoMSCAxubiAATdgZGD4dg1EMjBc1g0sYeXHoxYb4CwCWgikPwCxSDqYzcgCYidB2&#xa;BIgdnlJQQmQrQNiJxcUgdhAFzPwFIUEOQPZPkC2QDoSOwmJnZJanAxkxwDZ0Qi/5c9nYLD4wsDAPBEhl&#xa;jSNgWF7OwODxB2EmMpCBgb+VgaGbZcRYp/9wf5lFDtUklpRAhLx03dkKEgsSoT7isnYCGIvLIyoCgBiP&#xa;TEp0SkdeQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAIABJREFUeJzs3XmUG9d9J/rvrSpsDaDRe6NXNptkc&#xa;xdJcdVqSopsSdYkjjO2LFt2nGSSOZO8nDyfvDkv5+RNJovtOJ5JnOQ570zmjOOFjiRmJrbHjpzEjuVol&#xa;7iIFMW1ufXeaDT2fau6748CmmgQ+1aN7t/nHBygCoWqHwqF+6t761YVQ2VYnaapN67BMteCRnzvZv5+9&#xa;Yi/3Hizl1XLd2z0+lnL23K+2LT4v290la7zSrepZv+mjdzmK5p3uV+81HSNTpS1rLBGruxGbTjN+L5Uk&#xa;JWn2Hqqxzos9/day4myWpWsPy2+P/1HVqt1fTTqNyw137KXW2tCzB2v9QbUiMKl2u9UTc2llmkqnVbr3&#xa;2otK3d7LzW+mHr8iVspSTZjeyu2Plpxe1+rMTe6hlrtZwp9rm4JMd/7rIL3m6WZhcdaaFJsZkHYzFqQV&#xa;ipJdPXa5mv5beu9Pus9v3q0KBVTz3jXatIpRusm03ovv16/Z+58Kk6OlX7xQsOlkmQ5yyqmlhVa0x4DG&#xa;t9klk85P2yx8bVYCwm/Eo04hlhsey5nW69ELb91s3c0ajmGWOuORK07CtX8Vms1WWqVEBu1I1PrdswLv&#xa;C5neJVymzwLFQK5CbHehUUx5RYQWiXEWppMa/lR691kuhFriKW292Kvy1Xpb9zIhNiMGiIlxNZbfkath&#xa;8aq2XarPUyU73XZiViqYKG5GCpLiFp1qqlVoxNiJTLrgeUM13O51XaQqqYwWms1xFLbce7rSrfxfDGsh&#xa;aRWy85bubVtrQ+vUEKsXjW/YSO39UJ4ellVL6fcJtHsYVbkdb5CIt986qFYNTl7XKm9hErVs5aQq1TM5&#xa;XyXZtQQK02IrVJDLLa95w4XaykppJymnXLG17u22MgaYrHtp9R6K7XnXw9aHBKpdVnNbjKt5rBBJdtrv&#xa;Y6n86wHcl6Xtdxya4iFkqCQMz43KdYrYVSzQstNLoVU23xci0IxV5IYa02I9azZZzTyGGg9aoiFhou1g&#xa;tRaQ8wdV21CrMc6LHce5dYQS41rVEKsppWCEmLp+ddaQ8w3rtxtuJz3chNgbiIs+/uXkxCL1QSFPOMK1&#xa;RRrKWjLXbnlrvBajyGWM66agrrc76F1QqxXDXEtJsRiNcJiCbKcWCpJiOXsyNUrMTYyIVb6utTyqi08q&#xa;0mIzVRJstkICbGcMqNQIlTScSl5PsuKzLtgQiy2V5ydBMWs10LWM7C68AAKr+Ry1JIQy21yKqSSwrPY5&#xa;wopJ+ZyC8tC4/KhhHj3cLFaYKmEWO32XM1vXes2XSyeSqertDaYbxzVEFsvIdZSvhV7nTuu2G+d75EvC&#xa;So5wwWTYiYhFtowc1eAgNWJTywwPl8tsZqCI/tLFBu3kRJiqeaAeibEfDX9Qp+tpGmjnM+Us8xKVJIQ8&#xa;+3U5UuIlSbFeu38NDIhVrpjU2j7KKcmTQmx+LLWakKstHZfanutJCFmDyvIXzPMTnhK1nD2+Ny4OVC6h&#xa;ph5nZ3kMq/F9EPI88ieDlj9B8m3jFLKSYiFVnqjEmKxP3Otf/RyE2ItCSZbqcRezm9XqpCqpTZbTDU7H&#xa;rmfK1QzLCch1qtwz/2NC72X7zn3dSnVbjeV1hDzrZ9C75dabqMTYiUJqVlK/e+q3farXW65lYHsZVZSQ&#xa;6x0WiXPs5yOJ7emmBkuWDsE1IRYqgaU/chOemL685nX+ZJj7jzyLSN3XLkFZ7mJpFkJsdaNtVRBWOj9R&#xa;tUQy9mzL7XcUol7LdUQCyW7QuOaWUOsNSGWWs/lJphSCbHQNlPo/18oYeYubyMkRKoh5p+20HvZiVDOe&#xa;mZZz5lpM7lLwep47yoTpJwRxfaUc5NhdkKUkD8p1lJ4ZKumhlgomRSaXyGlahLlTJer2MZQLPGVW0Ms5&#xa;/uVs7dXrCDLVU5CrDZ5F1PtXnKxArrQdpuv1aNUoV4ohnITYD128ipJiJXOp1BBnm895b5fzf+k2DZeS&#xa;UIs5zdbawmx1p3uamNpVkIsp0zPfijph4jVzaWZuLLnkZ0MedY0q5ZbrJdpvmQoYnUyzH6IOY98SRF5n&#xa;pEzXO6GvlESYjnDufOqR0LMtxefb/pc5STpSuIsZ5nlKJUQs79ndutG7msGAL/8y788+PGPf/zezTu33&#xa;m+xtA2lF8AAIByKzIVc/qnMzB0Oh+P27duLmeEzZ84sfuMb38gMNyIhVpIAi01fznTlbjvFkiQlxBZKi&#xa;J/97GcHDh06NDA+Pm7v7+8fsPTYxsyWtuHMxOFQZC7sDtx2OByOW7duOc6ePbvw9a9/3YHS22u5ZWHmI&#xa;eNOM6kC9f+ZSk8v55kfy3nO+8ULbajFaoUiAJ0n5Plxp7lzIt+MmyEYCfn90YArFAzPh92B2wsLC0u3b&#xa;99ePH36tOPb3/52doHTlIT43HPP2Q8fPmznnDMAGB8ft9vtdntmAmtvx5i13TKYuwDH7YU3pqamZs6dO&#xa;zf9hS984TqKbwSlkn+5369YDQlFhnM/m6vcQqzU71Hun72cwjTfcKmCOvs/gE9/+tMDH/vYx+7dtnfHs&#xa;aG+gX2KLOuvJG/iZnTG5El6V824S9eJLn3HynCn2B7t13XJK++jU7RZbabMcPZ2HFz2TWUKkjNnzizmb&#xa;MeZ50rXZ601xELvF9upKlqT/sxnPjPw8MMPbzpw4MCujsHefQa9ZAWAUDA8H3L5pzI7EadOnXKcOHEiu&#xa;zDdMAnxU5/61MDhw4dXyo985YnFah4qNMPM9pQZzmxXmeFTp04tPf/8847czz377LMDR44c6R8fH7cPD&#xa;Az0Z5ZjM7X3WNssNn/QH/XAKy8lPaJXDpg8CR+y/wOZ7T+z3We299ztfHFxcenWrVuO06dPO9JxrNrOj&#xa;hw5Yv7MZz6zZWUFMcbvu+++/aIocsYYB8A7BrsO6ATJypjEmcS4klLcA529n4SaGDMPOeuRqVUCd/c+z&#xa;VsAAHf2ijM1vcxzdo1QH4qGz/yXmb/u9CR9hX6ThurSdaBb37HqB+iVbEoP6xFW/QCBwEJgObBS0Jw6d&#xa;WrphRdeWMyd3yc/+Un7kSNH+gGAc84yG0QmwbX3dW7K3gAzG0hm2B/0R13ctbKSl1N+wSsHVgq+3A0nY&#xa;6t5M+xSV6RL6uSbrCPmZd+yw+f3z/ic3qtvvPHGe+kNZhGla4xA6cIvo9Aead69/Oeee86e2Su02+323&#xa;OSeKcgWFhZWNvK//du/zcScG1c5MVe7N1xonsUK8ru2/2effXbgE5/4xL6JvRPHhvqH78lOgNfDt1HPb&#xa;b5O23Gx371UgixVQyw3Iebddn7nd35n23333bd1eNPIpr7h/oM2k3VYkRVlkbvl2/EZy3x0EVElll4XJ&#xa;QrTrHVw48aNpTNnzjheeOGFTKG+Elv2fxkANm/ePFDJf3ktqLY8yci3Y9Yr2Vbml9m+cj/nC/hibrhlZ&#xa;9In+pSgMbMcd8JX03afu513CNZYn65DLhRHIBxIuhVPPHvc1diUJXs4e9sBgN8c+yUwxsYBJNOP3KSYS&#xa;Yh5W2LyJcTcvePcZlJd+lm/HFz+5285v7t5KjpX7TpqqEI/QDe6xY72DmPu9LkbYGaDyAznboC1biCFD&#xa;Bnt6Df0ot/QgwnDSLiH9Qg6Sad3h73TriXnZe+Sd+7cuXM3v/KVr1yen59PoA41xGeffdZ+6NAh+5YtW&#xa;+wDAwP97b3tY5b29sF2o7W33Wxtz6ybzJ+y2F5hdmEeCAcDgVhwOVOQLS4uLt24cWPp7Nmziy+88MJSb&#xa;rzPPvus/ciRI/2KojAA2Lp1a3/2XnFuQZYrlkiGPLNLF7LHvf766+8JgrCyjG9/+9s3z549G85aD+yZZ&#xa;57pf+aZZ/bt2LPj6NDg8D1cUXSXEzfYrdissd4JsFKVbseVyiSbzHChdQgAmfWYsw4BgA0NDek/97nP7&#xa;Txw4MCWwc2Duzs7u8b6O/pGpoOz4cXksrCc9JimorOYizkQlWOoRKv+l0nzdOk68B9H/73XYjIfwZ2Em&#xa;JsUM02swJ0a4qqEmK83aG4NMdNMmkmIOgCGBe/Cye/5/+WeK6EbjfqOJE3HJIy1DWPIOAArb0uOm4cSA&#xa;/oBY5uxTazH/DMFiNZ7hbXuFZsEI4ZMA6vGTRhGsgtu9Iq9+nZzuy57nC/gi11J3sRaSIDNlvmNMqpdh&#xa;5FYRF5MLMZuhef1TsWjW4ovY63uLJP1Z8hox6/2PDPf3dH9GNREmMDqpJhdS+RYnRABlN+pJveYoghAj&#xa;Efjzna16Z80WJKncD08hevhKQDQwQNdiY9U6q7kVA+eZCahTmVGlarR1BzHheDVVcP/CJjL+FjNNa1Wd&#xa;ec3uqPKdSiivOkIqbs20YiEkgxB3Q4zp14UOiyYV3btsJDcg+MrJ96HfVFHu2Qp+EFCCCGkGbp0nYhGI&#xa;3MofOpfrrs6Vgk5bxb74F01xXg0GjAkDXKe6QkhhJCmMYlGJCIJH4qfA59v3IrshJitUI1x1Qzdbrenv&#xa;c2cqPobEEIIIXVgEo2IR+KZhFgoKRZVKCEiz4zuyrKLi4veDqmDaoiEEEI01Sm2Rx0OhwNVJMKMYgkxW&#xa;95mVJfLFTQK5c6CEEIIaQyzYFL8fn8I5V10Ia9MNit2RZTsExhXLejixYveTt5Zl27/hBBCSLUsoom73&#xa;e5QerDYcUOgwJWfaqnesZdfftmt0+n0NcyDEEIIqVkXOsVTp05lmkyBGmqIVZmenk7W68RwQgghpFpMY&#xa;NKVK1dya4gVqSYhNvOCt4QQQkhJ7eZ23dtvvx1GDTmq2hriqgUOf2M7+MuV3mGEEEIIWTtqOoaYfsBnM&#xa;WCn4zDGT+yF8F3qdUoIIWRNqKi2WOxapmVzHTsGFwDbu+9iPLgP/ISCJXke/t1LEA/TIUZCCCFNUfAqN&#xa;OWoS0LM8N97L/wA2q5ehd0hY/jGOPh1Ba6oA66BGbCnqPZICCGk4ao6jljXhJgR2bEDt3aor003bqB7P&#xa;oYJXz+kF3Xwx1xwGKehfCLZiEUTQgghVWlIQswW3boVc1u3Yg6A6FpG92QYm5J7YDppRCQRxJIyjdBDX&#xa;ojjDQ+FEEIIKaipWUju6YWzpxfO9HDH6bPoDW3G5lO7kXwrgeXEHNxbFyE+RMcdCSGEVC33Kmtl0bRa5&#xa;jt8EJnbkpovXkSPqwe7ZzeBvcDgiTrg7JoF/widzkEIIaTx1kw7ZXjPHoQBTAMwzMygZzqCLZED0L+oR&#xa;yDmxZI0jeRH40AbJUhCCCH1t2YSYrb46CjmR0cxD0AI+tF1KYLh2ARMPzAjmghjKTWL4BE3xN3Ua5UQQ&#xa;kh9VJIQK763VD0oVtvKeY4A0H7uHHoDwxh7fwKp8ym44otwj8yDPU5XlCOEEFK9chJibiKs+uaL9RA4c&#xa;ACB9GvTtSvoXezCdtcAxBcl+GIuOCzT4P821eywCCGEtLhiCVGThFeJ6PadmNkOzACQHAvouhHF5ph6S&#xa;kcoFsASZhD9UADMTk2rhBBCistNiJrV/GqVsg/CaR+EE4CQiMN2/gL6w5thecWMWDIGZ3wOvt1OiMcoO&#xa;RJCCLlbTccQn3766S5PIBwHYKhrVDVS9AZ4jxyGNz1sfv8C+jx2DN/eAn5bhju6hOX+OeDD1GOVEEKIq&#xa;qZjiJs3b7bKUOSGRFZH4b334Hb6teHWDfTOxTDh74X4og7+mAdO4zRSn0hoGiMhhBBtZRJivmbSQolwx&#xa;cTERJc/WdmVALQWH9+KuXH1UnKC24Oea1GMxnfCeLIN0UQYC8pNRP5NEGIXNa0SQshGUlMNsbOz0xoJN&#xa;ySuplC6u+C8/9jKpeRsZ8+iM7QZW35sQSQWwIzhOl2EnBBC1ijn6XnM/eQWgre8wBt/UPP8ajqG2NHRY&#xa;YmklHVTlfIfPAg/gCkAXe+cxqbYHhhf1MMTXcL86C1Ij62br0oIIS0n7o3h1vcuw/u+E+HFAPTtRvQfH&#xa;cHoE1vrMv+aepna7Xb7AhdMdYlkjfEcPQwPAMHjgf1SGLudR4HnORzxKbgfcUAaW5MX+SGEkHVFSSi48&#xa;BdvwXfVhXgwiv4Dwxh9aht67h2Esau+6afc8xDzNpkySTIl5ZY6hFgxpasLCw/djwUAxuvXMDhvx+DbW&#xa;xB7LYo5NonkczGtQySEkHUneMuLS//tNLw33dj9iwcx9nM70DHR3dBllnsMMfO8quZotnX0B0JrvpNp3&#xa;cS2bcetbepr29mzGA5OwHSyDd6IEwv2W2BPahsfIYS0uoXXp3H75CXE/DFse2YPjn35g01bdk3tfm0mU&#xa;6/frdQrlpaSOd6ISBj2c2Fs9xyC8AKDIzoL1+E5SHupSZUQQsp167uXMfdPN8EkAVuf3YOBBzc1PYZqS&#xa;20GAIIk6VPKxkyIK9rMcDxwHxwAjNO30H87insujSF+PoJ55RZivxjSOkJCCFmzLv2PM3C+PgvzUDt2/&#xa;fph9OyzaxZLqYSYewxx1XHFdqOp1xX1NySwVhTbNI7pTeOYBmA9fx6D3s2wnLTAF3VjrvM62M+t7+Oth&#xa;BBSrvf+9A04zy6gb/8gDv7n42jf3Kl1SLXeD5Ebo0kq5PMJ7t+PawCYwtH79jvYFtoP3Qs6LEXn4No7B&#xa;+EwncJBCNlY4t4YLvz5W3C9v4ixJ7bj4a8+DUOde4rWQsLdp1rkG85+XnltNbcZIikvSGFcYCsn/+sX5&#xa;tF/PYLdN4aRmkxgLnULkU8EwNbUlWAJIaS+vJeXcfVvziEw48G2j92DQ793HExce/eQoJ4fTZQYHMLs4&#xa;BBmAVjevwi7axTj37MiGPNi1nyD7uNICFlX5l6+hdt/fwWpaALbnr0Hw483r8doNSghaiS0dw9upF93v&#xa;3MKm6N7YHjRCFdkAYtbpyA9TE2qhJDWdP3FC5j/l9vQWfSY+PQ96D82onVIZaGEuAa4jx6BG4DoWsbA5&#xa;TD2zB+B8ryChdgtBJ/2gvWtvaYFQgjJdfXr57Dw09toH+/Cvt++H507e7UOqSI19TJtSEQbmNzTi7mHe&#xa;zEHoO3aVdgXhzH68g6EE0HMGyaReoYuNE4IWVsSoQQu/vnbWL6wiPEP78SRLz4Gy7BN67CqUtN5iKRxI&#xa;tt34NZ29XXH6TMYCu9C24smuKOLWBi9TRcaJ4RoynXegevfvgD/tAdbP7Ibez93DDqzXuuwakJNpi3Ad&#xa;/gQfAAEvx/9F0LY7TwK/ryChfgU/E84IQ6IWodICNkgpn5wFbM/vAE5JWPrx/fgvjXeUaYSlBBbiGKzY&#xa;fGh+7EIwDQ5iYGFAYy+sg2RZAhzukmkPpHQOkRCyDp1+a/PwPHWLNr6Ldjx7+5F78FBrUMqpqI7N2VQQ&#xa;mxR0YkJ3JqYAAB0nD6L0dBOGKhJlRBSR6lICu/92RtwX1zC4NFRHPr942gf0/6KMo1CCXEd8B0+WLBJN&#xa;fjkMpidkiMhpHzu95cw+Y334J92Y/wju7D3t45Bb13/VxCRAGSuvZavasmzHrnDdM22NSZfk+qmV7YhF&#xa;A9iTncD8rNxrUMkhKxh0y9NYualSSRjSfX44BMtd3wwXzNpoSux8azxHACjGuI6tbpJ9QxGwztgetEId&#xa;3QJi6O3IFCTKiEk7dJfn4bzrTmY+szY/ssH0HdoSOuQNEEJcQPI9FIVfV70vx/GzqUj4M8rWIxNI/AUN&#xa;akSshEpKQXn/+R1uN53YODwyJq544SWakqI4WhU1glMTCrUetoK5I5OLDx0PxYAmCevwp7upUpNqoRsH&#xa;J5LTlz/5nvw3nRh/Gd3Yc9vHoW+vfWPD0ZiEXlkZEQ/OzsbhRa9TBUFoXaDYHNH5VpmQzQQntiBm2qLK&#xa;jWpErIBzPzjdUz/4BqS0SS2fmwPjn75ca1DqqtkMpk4fvx414kTJ6q+SW8lCTG3cw1iyXi0TRJsblBCb&#xa;GXUpErI+nX5a2fheG0aph4ztn92P/qODGsdUkP4EFBGR0cttcyjUELM7UWa7zVPyEqoTUeF5XpBTaqEr&#xa;A9KSsF7/+UNuC4sonf/IA79p+No39KldVgNleIJ9PX1WVG4mbRk82l2Qsx0Qc3tilrwAGE0FHW3G0xby&#xa;wuXtBJqUiWk9XivLePa187Be8ONLT+7C7v+w2EYOoxah9UUATnMhoaGMlmf5XnkyuS7FTU1mco8FdMJd&#xa;J3v9a5wk+oMPNuc0D1EyZEQLc3/623c/p+XEQ/Hse1je3Dsyy13/mDN4jzFjEZjqauLF+1oU25CzNtkG&#xa;nK7pro7uj5Q5jxIi8ttUu1e7MeeuXGw5zk8sSUsd82Cf4R6HBPSLNMvTWLqe1fQ1mPBtha6EW8jeOWAy&#xa;W6321HD3Zhq6mWaSCQSYiouA6DbLWww4YkdCE8AMwD001PonYliS+QA9C/qEYx5saibQfLnwmAWqj0SU&#xa;m+3/v4Spl+6DlNPG/b85lF032PXOiTNpZQUmCSY0oP5mkyzE2Xu4UEA4LkJMfs4YqHLtmVew+PxeLr7d&#xa;QkgbgLZsBKbxjC/aQzzAISgH10XYxiOTcD8kgnRZBTOxDT8+z0Q76XkSEgtrp14D/P/chPW0U4c+L8fR&#xa;Mf2Hq1DWjMCqRAmOsb6a5lHTU2mPp8vNCIJSi0BkPVFsdrguu8IXOlh27vn0R0YxsjkdihXZbiii3ANz&#xa;4N9SNMwCWkpl792Fo5Xp2Hb0o1Dv7f+e4xWIypHIRn0NtSpyTRfL1PkvL+qhuj1eoNt5moXTTYC/737k&#xa;TlL1nj9GnoXu7DdY4d4UoI/6sZS2xTkj6c0jZGQteriV9+B4+1Z9Oy148gXfgaW4XatQ1qzokoMRr2uI&#xa;echAmXc1WJyctLzjK76bEw2lti27ZjdBswC0Dmd6LoexabEbphOtiGcCGJJnkHoIR/ELdS0Sja2C195C&#xa;0un5jBwbBQP/NmTMPVRzaOUQCoEvV5XycVYyz7t4q6DjXlec5/Pl9BxRgmRVCzZ14elvj4sAWAKh+3su&#xa;+gJb8LY6Z2Q307AGZ+Ha6sD0sOUHMnG8e6XXsPyuwsYfWQLHv7/noahk7pnlCuppGAUjKUOAxY97YIBE&#xa;LImELI+IEDtPSpCTZw6AHoAhvTDBMDEOX/l1/55voavQchqlsuX0OP0o0M0gkGAO7YEV8cslJ+nw9Vkf&#xa;Tr7R/+K5fOL2PzhHRh/Zjd05lKn05F8/nL3H4Axdj+AKIAYgHj6kUw/UgBkAAru7jx6Vy9TQjQX2rUbo&#xa;V3qa/3sLLqnohiP7IP+pAG+yDLm7TfBntQ2RkJqlYqkcO5Lr2H5wiImPrYXB37nYQh0KUxNUUIka1piZ&#xa;ASLIyNYBCCGw+h8P4LtnkNgzwMLsdsIfHQZrIMKEdI6Yq4I3vuzt+CddGLi4/fg8B8+onVIJI0SImkZs&#xa;tkM17FjcAEw3biBwbkBjP7TNvhjPszbroH/PF0lh6xdgSkvLn/1NPyzXmz/1H4c/eJjWoe0rrRLFgSDw&#xa;Ugt86CESFpSdOtW3NyqXle+551T2BLdD90LOixGp+B6dAHSGG3aZG3wXHLi6v94FxFXGNs/tQ/HnqD7I&#xa;TSCSTQixuLRWuaRKTWyz0EE8l+tptCDEE25jqoXAjDMzMB+K4S9b29G5NUgZk3XoXwsqXV4ZINynlnA9&#xa;W+eRzwUx8Rz+zD82LjWIa1r7ZIFiUTSW+bkeXMZ7UaTdSM+Oorp0VFMA+g6dRpjkT0wvqiHIzyH5WOzE&#xa;HfTsUbSeAuvTOHmyYvgCsfEc/tgf3BU65A2BJNgRCyRDNUyD0qIZF3yHDkMDwDJuYSBK2HsfX8Y0bNRz&#xa;EnXkPwk3eiY1N/sj25g6rtXARGY+MX96D+6Pu9Mv1aZRBNS8YQfNbRsUkIk61qqrx+zff2YBdB+7hyG/&#xa;NthetEEV2QRjl1TEI9RrZHU5tbfX8LsP92EzqrHzn9/ED37B7QOaUPq0ncg5PBP1TIPSohkwwgcOIAAA&#xa;MHjweDFCPbcvg+Jm3HM8euIPxfWOjzSYt770zexfG4BnVt7sPf/PIau3X1ah7ShiXFRTiQSiVrmUW5Cz&#xa;L2fVO4zIS1D6erC3MP3YQ6A9cJ7sLu3oP3FNriiTiyM3YT4CG3WJD/PJScmv3kenkkXNj+1Hff/6RNo6&#xa;6/petKkTtrbzIll13y5nWryKpYQ891UEaBkSNaR4D37EAQgxGLoOxPCrsXDUP6WYy51HdFfDGgdHlkjb&#xa;v79Jcz/+BbkpIwtv7Abx778Qa1DIjlsok25uPSuGzWcCUFNpoQAUIxGOB68Hw4A5iuXMeAYhe2kFb7IM&#xa;ub6J8GeomONG9H5P3sD7nMOtG/qxM5fO4jeewe1DokUoGdAJBLJ12RadmKkhEhIjvDOXbixU33d9+bbm&#xa;PAdhvA8MB+/jcBH3RBs1DiynnmvLGPym+/Bc82JTR+awLE/+SDMg1atwyIl9LAe4fTp045a5kEJkZAin&#xa;PcfgxOA8fokBucHMfpP2xGIejHbeQ3s5+i6FOvJ7e9dwdw/30QylsT4R3fh6B//DB0YaiFMYNK1a9fqc&#xa;h4iy/NYtSxQpxqygcW2TeDWtgkA6qXitoX2Q3pegiM2A/fPzEEc1WkcIanWhb94C66zi7AM27D9Vw6g7&#xa;9CQ1iGRKrSb23WnT58OovAxxFLnJdZ2+6cPf/jDXZ5AOA71/oiEbAiZS8Xpp6cweDuCvW+OIfyvQcyaJ&#xa;qF8LKV1eKQM/htuTP7NebivOTHy6FYc+eJjsAzbtA6LaKymXqZdXV16gXO6ayvZkBKbxjC1aQxTUC8Vt&#xa;zm6B9ILEoJxP5zGaaQ+UdMpUaQBpv/hGmZ+eB2JcBxbProbhz7/KJhADV1EVdN5iIcOHRpwpSghEpK5V&#xa;JzodaH7yg2MxnfCeLIN0UQYS8oUgvf5IE5QT1WtXPzLd7B0dh6WgXZs/+x+9B2hy6ptIM3pZdrW1qaPU&#xa;wsRISvkzh447++BMz1sO3sWvcFN2PTuLqROJ7Ecn4V3bAnsUaqVNJr/lhdXv3YW3qvLGHlkC47+0WOwj&#xa;FKz6DpX0x2ZakqIAwMDXcGwQru9hBTgP3gQ/vRr85XL6Hb2YadjFHhBgDfmxJJtBvgoNbLU0/QPJzHz0&#xa;nUkgjGMf2Tre6/WAAAgAElEQVQXDv/+oxB0VEyR0kolxKLHEM1ms8UvJOnUDULKEN65C+GdwAwA3dwMe&#xa;qZi2BLdD8NJPYIxP5zSNGIfDoF1UOFdjYtffQfOMwsw9Zix7dP3wH5sROuQSIvJl8zydabJewzRarVag&#xa;rJBB9DtdAipRHJ4FIvDo1gEIIbDsL1/EfbYVlj+qQ2xZARLqTn49y9DPCBqHeqaFpr14/J/PwvPFSeGH&#xa;tqMQ79/HO1jnVqHRVpUTbU7k6VjIBCX6xULIRuSbDbDc+woPOlh6/nz6PUNYeTqVihXFLiii3ANz4N9S&#xa;NMw15TZH93AzA8mEfVGsOUju3Dw/3kYooEaq0htqtmCVmqJokEyJEN0tQ5C6im4fz+C6dfG69fQu9iF7&#xa;R47pBcl+KIuLLXNQH4mqWmMWrn4307B+fYcjF1t2PLsHtjvp7vRk/qRUP4Vau5qMrVYrUPuZaohEtIos&#xa;W3bMbsNmAUgOh3ouR7FptRumE6aEIr74cAsIsc96/5KORf+65tYeGcGQ/eP4dDvPYL2cWoWJfVXUw1Rk&#xa;kV9UqGESEgzyH12LPXZsQSAKyl0nzmHvvAmWN/cheRrcTgT8/BOOCA8sH6OO57/k9ex+PYMdv/KYez6j&#xa;SOQTNQsShqntvMQzXqbPx6tVyyEkDIxQVq5GAAAWN6/iB53PwZmxsBnAE/UieWeGeBnW/OQxsW/fAfzr&#xa;09h85Pb8eR3PklXTSZNUW4v0wK4MZpszT8cIetJaO8eZC7zr789hd65KLaFDkD3og7+mBdO/TQSvxADM&#xa;6ztzHL1b85h7ic3MXDfKB79+s9DZ9ZrHRLZQMo9DzH/aRfmNkMk5W1cdISQiiU2j2F+8xjmAYg+Lzqvx&#xa;jEU2w7z98yIJEJYkmcROLoMaefaOe54839dwvQPrqF7Vz8e+MqTMPWZtQ6JbEA1HUOsZyCEkPqTOzrhO&#xa;qbenQMAbGffRW9gGGPvbUfqXBLLsUUsb5qH9Jg2FwOY/dEN3Py7SzAPWHH4Dx+FdVOHJnEQAtANggnZU&#xa;PwH7125lFzbtavoWezGbucwhBcFeKLLcFqnwf9t4zvKOd+Zw7VvnIdokrDvt+9H587ehi+TkFIoIRKyQ&#xa;UW278DM9vSl5OYX0HM7gvH4XhhfNCIY92ORTSPxZASsjrnKP+nGxa++g1RCxq5fPYjeg4P1mzkhNaKES&#xa;AhBcmgQi0ODWAQgxGLovPA+BiLbYHnZhEQyCkdqHv7dSxAPV3dKR8wdwfkvvY6wM4Rd/+4gBh7aVN8vQ&#xa;EgdUEIkhKyiGI1wHzkMd3q4/cIF9HjsGL4xDn5dgSvmgGtgDuzJ8uZ36nd/Au8NF3b90kGMPLG1YXETU&#xa;qtKEyJ1qCFkgwnccw8C6demGzfQvRDFdo8d4kkJgYgLi6ZpKJ+4+1Jy737hVThOz2HnZw7gyBcea27QZ&#xa;KOr4PTBO6iGSAgpW3TrVsxt3Yo5ADqXC52TYWxK7oHppBHRWAAOPovLoVOYfOU9jP/sTtz7uw9rHTIhZ&#xa;aOESAipSrKnB86eHjjTw51nz6DTO4QnOz+ND370k/CJTvjOLyO5n24PR1oDJURCSF0sbhrCD07+Gh788&#xa;g8gvvEK7EEJ45f3QrgiIAAPvH1LiDwWLD0jQjRCCZEQUheXv/lHGPvwLwMA5Ac+gHkA8wBw7RK6b8Vgl&#xa;zfDeNKMSDIIj82J4JFl8H669CNZOyghEkJqtnTmX8ATcQx/4OfvfnP7bri371Z7rUbjML/xU9jdnRj66&#xa;WaklCR8Oid8O5xI7k00O2yy/lTckSYbJURCSM2unPgSHvyT75ee0GRA+GeewM30oPTGv8Ie0GPz+/sgX&#xa;GQIwQOX3YHYI6GisyGkhELX4S6KEiIhpCY3Tn4F9nuPQzK2VfzZ1APHMQdgDgC/cgG9UwkMzY3DcNKMS&#xa;DIAj82B4P1e8G6l7nGT9SUSi8gjIyP62dnZQvckzE2Qd7XXU0IkhFQtNH8TS+dfxQN//N2a58V23gPXz&#xa;nvgAsBDIZjfeg2Drh4M/XgbUkoMPp0bnp1LkPdQ0yq5WzKZTBw/frzrxIkT/tJT50cJkRBStctf/0Ns/&#xa;YXfqPt8mcWCyONP4kZ6WPf6T2EPSNj6/j4I7zP4uRu+4SVEHqamVaJyw6Ps3LmzG8BUtfOghEgIqcriG&#xa;/8AyWBA/6Gfafiykg8+glkAswDYpfPonU1iYGYLDC+2ISz74bYtIfywD7y98XfqIGsT5wrM5pU7SpdzD&#xa;PGucZQQCSEV41zB1Rf/DI/8vy83f9m798O5G3AC4H43rO/MY8Ddj9EfbkNCjsFncMK70wV5NzWtbiTLK&#xa;b+wZcsWey3zoIRICKnY5Ik/xsiDT2sdBpitG6EPPoHr6WHptZcx6Ddi64V9wPtAkLvhHl5C/KGwpnGSx&#xa;gvGQ5LZbLaATrsghDSL//YleCbP477P/0+tQ7lL6qFHMQP1Ho/svXfRu5jE8PQ2GOaNCMsBeDqWEHrYD&#xa;W7VOlJSbylJ0XVZrZYik1AvU0JIfV35xh9h4tn/S+swSuL77oVzX7pp1eeB9Z23MeDqw8hLE0goEfj0y&#xa;/DtcSG1g5pW14NgKoRNFvtAepDOQySENNbcT07C1NWH7t1HtQ6lIqyjC6EPPbXStGp89SfoD5iw7dx+K&#xa;OeAAFzwjDgQfzCiaZykehE5Br1RZwM1mRJCGi0VC+PGD76G43/+I61DqVns4ccwDWAaAM6fQZ8jhZHpC&#xa;ejnjAjLfng6HAgd94Gb6VqrrSKYCsLU3tZdyzwoIRJCynLtW1/AyPGPah1G/e0/BCfSTasuB2xn52F3D&#xa;2D0B9sRl2PwmJwI7HEhNUFNq2tZRI5BL0jFjiGWRAmREFKS5+oZhBemsPvXvqh1KA3FeuwIfOhJBNLDh&#xa;ld/ArvPhG1n94OfVeCDG95RB+IPFLo6GNFKVI7BqDeZapkHJURCSEmXv/F57Pv1L2kdRtPFs5pW2flT6&#xa;HPIGJ3aCWlWh5Dsg7fbifAjfnADXWtVa56kD9Y2i62WeVBCJIQUNfOP34RtdBusozu0DkVTfP8RLAFYA&#xa;qAszKHj4iIGlgYx+r0diMsReA1L8O93Q96S1DpUUmXHGkqIhJCC4n43pn/yd3jov76kdShrijA4jMDg8&#xa;ErTqvGnP4Y9YMHEqVEo7yjwCS54R51I3E+9VlsJJURCSEFXv/l5bHr8k1qHsebFHnkcU1CvKi28+w76n&#xa;ApGp3ZAN6NDSPbD072E8GNeQKdtnOtZu2RBMBisaQ+EEiIhJC/XhdeRDLgx+qFPaR1KS1HuPQoHAAcAP&#xa;jeLzovz6HcOYuw7OxBLheE2ORE84IK8OaV1qOuKxCRAZDW1V1NCJITkNfvj57HrV/5I6zBaGhsegW94B&#xa;L70sPGnP4Ldb8Xg25sgvy3Dx1zwbXYgfjSmaZzrQbe+A4FYcDk9WNUJpJQQCSF3CS/cRsS1iLaBTVqHs&#xa;q7EHvngStMqO/sm+pc5Rm/uhDSlR1j2wd3jQOSxALhIFwSolMQk8JScQJXJEKCESAjJw3XxTZgpGTYUP&#xa;3j/StMqm52C7fICBhaH0fa/2hGVw/C0OeC/1ws+Sr1Wy9EuWRGOxpazRvGcR0mUEAkhd3Gd+1cMPrwOr&#xa;0qzRvGRMfhGxu40rb78Iwz42jH45mak3kjCz9zwbnUicYguCFCISTQiEYj6i0xSMkFSQiSErJKMBBFem&#xa;sXAfU9qHcqGFXv0g7gN4DYA6fQb6HUDY5M7Id3QIaB44elZQuSDxcr+jcckGpGIJLy1zIMSIiFkFc+lt&#xa;2HuG9I6DJKWOvwAFgEsAlCmJtF9bQH2pU1oO2lGNBWCx7KEwL0eKCMbu9eqhZniHo/HgwqaSHNJWR/Md&#xa;2Z/bvWy4jZZQkhrcZ1/Bbbth7UOg+QhjE3AOzaBTDXI9JN/xoCnAwNvjkFWUvAJLvi3OhE/uPF6reoEn&#xa;RJIJLKvwF4qX92V36iGSAhZZfni23jwT76vdRikDNHHPoRb6dfiqTfQ72HYdG0XpOs6BLhHbVp9PFB0H&#xa;utFr2RTTt183VHLPCghEkJWeCfPwdTRA8nYpnUopELykQewAGABAL99HV2T87A7NqHtpAXRZBAeqxPBw&#xa;27Ig7LWoTYEYwIikUgcNTaZEtKSFt57Exe/9zUkI0FwRYaiKADn4IoMrigAOBRZAVfUAoBzRR3POTjnQ&#xa;HqYgwNKehz4nWnAs6a98wxkv1bnq77AyjzU8XemSY9Q55l+vTLNnQlWPd39fvakd4/n5ZYBheYJgDEGv&#xa;akN90bD0JnM5c2PrDls8zZ4N2+DFwCTFZhe+REGvB0YeG0zZDkJn+iCZ2IJqQNxrUOtm250CZcvX/YUm&#xa;aSxvUzD0aisE5iYVOhwImke78wkvvPrHwLkJDaZBXRIDAJTD4ILDBAAMJZ5zdTX6fdY9vsr4xgEEavms&#xa;ep9AALLWUb2tCvjWN73756WFZw277xWfZ/s78DuGnf3d2QFvs/qeDLvz4QVfPVKDN/46A589jtXKSmuA&#xa;1wUEHn0CdxMD4tvvYr+gIgtV/ZCvCoiAC88fYuIPBbUNM5aMYFJ165dC2WNqrimyJD+7+Q8Zx5i+qEDo&#xa;M96GAEYA6HIP37xrN/mjq7PKjhZm7729GYc6eQ4edyMUbOgdTjrTjjFsf/7ASyZh/GJr7+pdTjrEldSE&#xa;FMpMEUBFBlcUV+LsgKuJFfGM0UBgwKWTIAp6ucYFDBFgSAr4FCfGZcBRQF4CiylAIyr4xWujuMywBUwh&#xa;YFzGQIHGGSwYBRtKQus7QOQdGYkk0Ek2TwS0lXIKfXYI1OQ/iwgcAVQGDgHBHAwmYNxlm5BAYR0q4jAA&#xa;Q4GJisAGBjnYBxgnKdTlDosKOprcAYGDkFhUMAhcqgtGZylp+VgYGAKwNLTc3AIPL18AJ/9zg/AGDsOI&#xa;Jp+xADE048kgFT6IQNQm5Aq6FSTm1lzq5s8loxH2yTB5gYlRNIct197CUxO4u+O2zBSp2SYggQFAqAIS&#xa;AkSUhABJgDQgTMgpQhIMQmAAC4IUBQRXBEgCwIUQQTnDBwSZAAcOnBBgMzVapnMJSgCwBQdOGNIMQYGA&#xa;SkOCExS/5VMBAeDrACMSVAgggtQlwch/e+SwBnUOBmDwkUwMMgQ1DKDCVCYAKYwKExQd22ZABlMLTwYA&#xa;7gACALUMkgAF7g6Dur7kpzApvnvA1zA5w/JuOID+v7mdyEoHJwBgsIBKGD8TiEnAADn6UKKQy2+1IKRQ&#xa;4EAlv4MU4cVNTTO1IJMnS7TxZ1DAFcLUq6ArcxNLSwBBgFKVr/4dEGbnp+gqOPUso6pBTAApJfFGcBWP&#xa;stXvoP6eaQL1nQ06c+A8VVxQC371flytXDm6TgyM8qMS6cEZH3B/Hhm+enPcZ7+TdSkoc4rvV6Rbhrn6&#xa;vvqGywzdmW5HHdiAQAF6XWg/vTqfNOrQWGZMBhCw8cQt20CU56AIgkQw8swuK7CsHzpznwzvyxXt4tM3&#xa;mLp305hHJzfWWtc4Mj8bIoACJllckBhPL2dI72l3Ek7PP3VVrIVU2Pk4Op/gHEIYJCZutzsjxVZ20WVa&#xa;jIt2t6akJVQm66+e+iMK+ofLZWEwhWIirpng1RS3UuRFYDLEFIpQOFgPAWWksG5DFHm4DyV3kuRAVn9r&#xa;Jje24Ks7hgwRVH/3FzdA+NKCiJn6jRAeu8slf6zqntaYIq6NwRZ3dDklBqroq4ekcuQOSCm9+iQ3hNSC&#xa;4/03ho4ePqPvvJZLkPgHIrA0nECYOn4GFf3ztJ7U9mFkaCkC6F0YQMo6b0yde8sswUypu7hcaZA4Exdh&#xa;8iMBJjCwdJbqJDewFn6c5ljTYwrgMDUabMKh+zCKbM53l04ZeaRVThlire7CqdMAVO4cAIHPvfBJ3E5x&#xa;HA5DCzu+RTihs6VYjO7AF1VKDAgU8TizpxXlVXZBfPKnmn6c3cKN74ScyZGll7v6S+oTr2SJJApxbKWq&#xa;ax8H3U9MKj7xQxM/bHUz7OseSM9DlhJDmqxlCmg1YSUGcE4h8IBAQoYS68NDgiM3zkuydKJKh1r3NgDK&#xa;bSEbs8FGAQZHXoFYsCNO8WwWggxzqAw9ZsqUH9nNXoBcrrQUn9MAeAcsiCo30kQV0ocmQnpJKW21XLGw&#xa;DmDwhggqElagToPRRDUglsU0/NWP8dFEVDU8eryJChielkiAyCphTETwZmofk4Q0+MkKKIIBgFcEqBwA&#xa;UxggCCp85UkdWdCFMCYHopOhAARKZFBgAjodQDTQRE4uKQHRAlMlMAECbIAMEEHbjCq60ongYk6cLG1u&#xa;myIp95Ab5ihZ/gB6MceRSQVhNeyjOBBF5QRRevwGiLfL5RJgMX2aQAAqWWn+7F/+f7Wna++svLnSJcJ6&#xa;YL9TqGR2ZtT96ZKzD39fqYgYJzf+ZOl95jujEsXCMLqyFftRfH0TLkAReB3CmJkplOTemaPi+POnz4zz&#xa;LE6/swejlqgcSiCun+70lkC6dkqXN1zT3+W83S24RzKyj4VoAhsZX7ptAaFKQAX0ntfDPJKXOn3Vz6tP&#xa;nOWiTmz15UuOJDZ8wS4wNK5WgQXGJgAtUaRLpTAoBZK6cJKSRdOXBDS87kzDCak5w/1taAWXup6lMAlI&#xa;b3O1ZoPZxwQdOl5AFyUwJkCJuggiwzgIiAKao2JARAlQEwXXOl5z55+DTde+Q5e/qAVJh3H84bfxNPzf&#xa;wBRSUBgMgSWgggZIjgERQZnCiSujhdkBYKgQFJSmbYakhYVO/Ctgb/C0+wE5C7g6D8EcFnuxHMvntc6t&#xa;DWnnPYwXuC5lchHHrhzGyufB+bT78Du68TQG5shKykEmAfeISdiD4e1DrVuKtll4bmPmKSLXdhzP95mg&#xa;4AoAkxSm4n0OgiQoOhEMCZCESUIog6KKIBLOgiCCEUQAVEHrtODCQxclCBASO8dEpJf7/5H8f3//Q389&#xa;uko/vvDXRDAMaxcU9/M15aRXSJlNq0W3MSU9M6SwjOvedbr9Hio+2N3xvFV41ZerxqnHvu5PvA0jEkn/&#xa;nE+iT+9GMNZt4xnv/WSht+YrCWsowuRx59cOedROPMWepcVDM1ug/GkEdFkCB6LE8G9XshbWvdi5DXV4&#xa;UN+31Tnrn0fSOk33/VeZi8qUx5l9sdzm6lynwkpRhAlPPRbX8bf/vl/xJWEAb/6WY5PvRrOSRbpZJCVL&#xa;O5+X50m3/hS87o78dxJLIUTj9qMqmSWkR63arnp+eSOa0bt4vP/xwFcOP8W/u7HIUh6Iz76Vy/BQpdvI&#xa;wUoh+7DEoAlACwWgenNV9Hva8fAqTEop4AA3PD3OVuu52p2Qsz877IPqWQ/7pJIJBJiKi5D7YlKSFPse&#xa;OJZjD/4YUz+1R9AlmV816Nufizd+YClm35XnoX0eEFQD2syBkG4Mw0T1EfutILAVr2/Mh0YBJFBENXOK&#xa;4IoqKdACAyiKEAQ1ekEQT0uJUgCmKguWxBFiDohPS8BopSeRieCMQZREiDq1deCTky/L0DUCRAkdVjQi&#xa;RBEAaJOhKgXIQjqZ8T0eMmgNjHrjBJEnQRBEiDpRYgGCYIoQGfUQRAFCNKdqrLtL+1o/6XfwK9+7j819&#xa;bckrY8b2xB59Anczow4fwY9iwnY5c0wnjQjlozAZ1qCf5cb8s6m1R6L5q5Camoy9Xg8nu5+XQKImypZK&#xa;CG10lvaceQjvwq+FMJ/nvx9rcNpafEf6pCQY2AdXVqHQtaD/Yfg2g+40oPGn/4Y/X4Ltp0bATvPEIAX3&#xa;m4nIo/41RP61pCamkx9Pl9oRKLeCUQbYjSOlEKbX60MN7uxHCt2gQ9Cqhd75HFMA5gGwK68j47pGOypU&#xa;bR9x4J4KgqfwQn/dheSexOlZtVwNfUydbvdoTa6kAXRiJhMQlZa9wD+WtEud+FmP61H0nh85154d+5du&#xa;VuH4dWfoD9gxOb390G8JCCoeOHrdCL0oA+wNj++mmqI169f99h01B+GaEOXSiHFqSCvReL99Gkz+49oH&#xa;QrZgOIPP4YZADMA+M2r6LwRQX9qCKM/3IGEHIdPciG4Zblpt7MqNyHmPTDp8/kSusxlFAhpMikFKDzZi&#xa;mdRrBnCOx3wUXMpWQPYlh3wbdkBX3pY9/rL6A9I2HRtF8QbOoRSPvg6XAgd84J3N+ZQSU01xG9/+9uOE&#xa;ydOmAB/veIhpGwS50gqCRi0DqSFWYPdmNRvjPvlkdaSfPBRzAGYA8Bmp2C9soh+Vx+Gf7wNKZ6AX3DDN&#xa;+ZE4mi0bstsrWsJEZJFUhTEhPVz+5qmiwAGyYTEA0e1joSQovjIGAIjY8jsuolvvIL+IMOmG7sg3dYhI&#xa;vuBL9a+HEqIpGWJEJCSUlqH0bLi/7sN4RjVDknrkR/4wMrNkBWnA7b35usy35oOvzz11FNdnkCYdtGJJ&#xa;kTGwCXqVFMt81I3FuRQ6QkJWcOEPjuCjz9Zl3nl1hBZ1iN3/F3Gx8ctcuYWEYQ0mcgFyG0pUENHdcxCB&#xa;/x7xqibOCFpNdUQt23b1uVPtuSF3Mk6IAkCmIX2x6oR+5GEpJIAGxzVOhRC1oxiCTG3tshyH11dXdbI+&#xa;rnzB2kxAhPAbLQ/Vg3DZBeWI67SExKygdRUQ7TZbJZISqHTwIgmBCZC7KPNrxpWuQvOHpvWYRCyptR08&#xa;GVwcLB/gQt0YW+iEQbDIB0/rFTyKoMICcqhg1qHQsiaUtPuNZMkU1KmJiuiEcagH6AaYqWEN9vhjbq1D&#xa;oOQRsrXObSkckuTvMcR2ywd9kCCOjWQ5hP8fnBOO2PVMPt7saij/y0huUq1N+V2qlnFbDH1+H10+x3Sf&#xa;GIojObcS36dkQGj1IYYXZ2GrE+5NcNCpxLmVVN7kyBJ+pRChRJpPikagUKnwFYs/h0TwvGg1mEQsibVl&#xa;BDbjaZeV5QunUWaT4zGoHDa9irVttANR9JXekJCNiABxc83RNa43PcYwI3RJNUQSfNJyThkhRJipSysA&#xa;57tW7UOg5C6i0Rj8sjIiD49WOiKa4UeAMBqqiFazW2GSIqOIZLmE5MyUpQQKxJ/RUJKSUEYm9A6FELqL&#xa;pFIJY4fP95VyzyozzppSaKcQgoJrcNoKfpLnXBF6HQLsj75GJSRkRErGtippmgvU0K0opOBpEwJsRKWZ&#xa;DeWusxah0FIQ6SSHP39/Zb0YEPPQyRkTREVQGaUEMuVmuVIpRKQjzygdSiENIQrwNnQ0FBTmkwLXeCbE&#xa;E1IHEiJdC/EcimvmpFSaH2RdYxzZjQa9aUnLIxqiKQl6TiDIlKnmnKZXF1YTtHNgMn6tcwFk91utyP/G&#xa;RJloYRIWpLABCgGOjG/XGZmg294UOswCGmYpMzBJClzs4lCHWuKtm5SQiQtSWQCZAs1AZYjeQ0AGPju/&#xa;VqHQkjDBBIyzLaO/qxR1KmGbAyCIEKw0kUhysFPmRGM0tVpyPoWSSqQ9IaabvIpQL1CcqGShee8z/OMI&#xa;6TpRAiQuqlfVzna3N1wyRGtwyCkoaIpDqNBb0F5pwvmbUalu6uSlsSYALGf9snK0SZY4R2zUbdwsq754&#xa;zL0BmNnLfOgJlPSkhhjMI7S/lwp8YvqM9txj7aBENJgSYXDyMSaCgVKiKTlCLEYwDlEk6h1KGuecNaKQ&#xa;DSgdRiENJw7KsNqNtV8DLFq4WhU1gnUEEOaSwwEoDBqLi2HydOJZU7nHxJSjkoS4l0lkKIg1G6gSiZpL&#xa;jEaAlfoLivlaBPb4d8yrnUYhLSEYtksX4/SVeNiyXi0TaKESJqLRRKQOSXEUhLnBYBzsC07tA6FkIZrN&#xa;4gIBkM1dafOl83KPqUiISuhNh0lRNJcUjwGRaaT8kth5yzwx+j8Q7Ix6AQAQm0XOK4pm0VDUTc1mZJmk&#xa;5IppBS6bFspbb4OLCOqdRiENEWPSUIgFl2uZR6VdFHNbULlMk/FqFMNaTZdMoUUpxpiKW1SO4Kb6PqlZ&#xa;GOQBAYllarpnnDZ1bvcptKSV6UJuV1T3SY6F4w0lyhzpBDXOow1LXZagKwowNgWrUMhpClsBgGRaHQZd&#xa;/d7yeeuCh5QeS/TVY9EIpEQU3FquyJNJSkcMtUQi9K9b0Ug6tU6DEKapk0SkIhE/LXMo6YDgB6Px9Ol0&#xa;9Fty0lT6TggC7TZFWPyd2KJUS2abBwmnYBENJK9F1jxyco19TL1+XyhNkmg/u+kqUQwpCSqIRZjFC0I7&#xa;9yjdRiENI1VTMQ9Ho8nPVjs8F/B/FZTDdHtdofazLXMgZDKSWCQpZTWYaxZibdEKIoMNjyidSiENI1Rk&#xa;ZREIpHA3cmwbOUmxLwzvX79usemo4vok+ZikMDbqIZYiHixHf44HT8kG0uPTVBu3rzpqGUe1dYQOQD4/&#xa;f64jjNKiKSpJCYAFmqpL6Qt3IklRjVosrEwgSEcDtfttIuKnThxwtFhs5hqmQchlWKCAGaji3sXYhTMi&#xa;Ozfp3UYhDRVtwDh8uXL2ccQ69KphpA1TWQMUr/WUaxNiddEpJQEWI9d61AIaSpBEqTJyckgCneoKT2PR&#xa;gRGSGMJMAzSBSHyEaaMdP1SsiG1m9t0p06dquleZ7kJkWU9csffNfzUU091ewJhOtmJNA1XUmAM0PdTQ&#xa;syHKyJ0Aq0bsuHlqxXmO/1i1VVtaqohjo+PW2TQVZZJ84i+ABS69VNBTGFQ6PAqIVWpKSFu27aty5+s/&#xa;MAlIdUSI2FUcax8w2Ac4LTDQEhVirWt5Daf3jXc3d1tiYQbGB0hOcRoBIpCBX4hXMbdBzgI2TiK3aSip&#xa;JoONnR0dFgiKYU65pCm0UXjkDm10hfCRUCmoxiEVKWmZGa32+3LXKDzEEnTCMkkFfhFiLIAkdE+Ktnwm&#xa;n8eoqDTGZMyHc8hzaNLyUjKdKeLgjjA6RgrIVWpKSG2tdvsgQTtrZPmEZIKZNB1TAviDJzyISFVqfYYI&#xa;gOANpOp1++mDg6kfiJLM4gszSLmcSDmcSDudyER8EKOhqAkYnhsx1OQOi2gdvoCOPXBJaRaNXWqESRJn&#xa;6Ief6SImNuBsHMGMdciYm4H4n43EgE3lGgIciKWfsQhJ+NIxWPQmczQmdthbO+EwdYNo/eOC6EAABoxS&#xa;URBVK0b1qGtkCwd0FtssC6nIMoRrb/W2sUBTlVEQqpSTkJkeR4AwNqNpl5X1N+o2MgalAh6EXXOIuKcQ&#xa;9S9iJjXiWTQi1Q4ACURhRyPQU4mICfjkOMxCDoD9JZ26C02GNq7obd1w7RlD/TWLugtHdBZO6G32KCzd&#xa;kJnbi+5fOHVN8EVSogFcYFqiIRUqbZrPCmyLkkVxJaWikUQcUwj6ppHzO1AzLuEhN+DVNgPOR6BHI8iF&#xa;Y9BSSaQSsQgiBJ0bRboLR0wtHfB0NED08gEdNYu6Kw26CwddxKdtQOszj0eORgEKvFLoD8lIdWoLSEKY&#xa;lJHPbzXFEVJIbw4jahzFlH3IuJeJxJ+DxJBD3giBiUeRSoRQyoRg5JIgHMFUpsFerMNhvZOGGw9sNhHI&#xa;Fn3qcnN2gmdxbaS5ARJp+n3Y+BgdAvOghhnUKjJlJCq1JQQ48l4pE0SbG5QT9NGii7PI7I0g6jbgbjHg&#xa;ZhvGfGAB0o0DCUZgxyPQUnGkUzEwFMp6Nos0JnbYWjvhN7aBWNHD6ybtkNntkFv7Uw/OqCzdEA0tFb3F&#xa;M7oGFlxDNSthpDqVJIQ77oyeFxWwm1URaxYzOtE1DmHqGsBMfdiuielB3IkCCWhNlHmdjTRm63QWTpg7&#xa;OiBwdoFy+Bm6CzZtbcO6C2dkNosWn+9xuIC1RBLoPMQCalOOQmx4Bn/0VDU3W4wba1vSK0nEfIh7JhBz&#xa;LWgni7gdSIRcKsJLh5FKh6FnIxDSSQgJ2Jgkg56czt0Fpt6HM7WjfaxXdC3d95ppjTbVmpxJBclxEIYp&#xa;3VDSLVqajKVeSqmE9bfH1BJJBBemkofh3Mg5llC3O9GMuQDEjGkEtE7pwsk4gAToGuzwGBVk5ne1g3r0&#xa;Ba1o4mlYyWxGayd0Fk7wARR66/YupgCSohFcAbKiYRUp6aEGHK7pro7uj5Qr2AaRlEQXppBxDmLmHsRM&#xa;c8SEgE3EgEvlHgESjyKZDx9TlwyDq4o0Jks0FvVGpzR1g1z3xB0W+/JOg6nJjmdtQOizqD1N9wwFAASN&#xa;ZkWJICOsRJSrUIJsaxbZiQSiYSYissAml7liSzPq8fh3AuIuZcQ9y8jEfRCiYagxGOQE9E758MlEpBMb&#xa;dCZbTBYO2G0dcPQ3gXL8Dbo08fedOkEp7d2QDS0NfvrkDIJABjd768IRhVoQqpUbacaDoB7PB5Pd78uA&#xa;cQb0lXRO3kO3qtnEJy5hoTPCQCIepchJ+KQDCbozNb0cbhuGDp6YO4fTZ/ordbcMrW5ck74Jq1B4Qyca&#xa;ohFcWozJaQqNTWZ+ny+0Igk1Ly7HlmagfvS2/DfuoS4aw6xgBeJkB96ayfah7fANr4H5sFxmAfGIJks0&#xa;Fs7ASoUNyQmUMeRojgDpxPzCalKdkLMbiJlBcav4na7Q23m8heWikXguvA6vNfPI7JwG4mgB8lwAEwQY&#xa;RkYg3V0O7r3HINlcBzmwXHNTwInaw/nAGd0jKwgJkChNlNCqlJTk+mNGzfcNl3+f5/7yil4r76L0Ow1J&#xa;HzLiAd9kBMxmPtH0D4ygf7Dj8M8uDl9Ph2dWkDKwxmjGmIRjHOAdhgIqUpNnWp8Pl9C4gqb/vHz8N++h&#xa;IRrEfGgF8lwAIaOHliHt6Bz4l6YBzfDPDgOU89g3b8A2VgYB52YXwyddkFI1Wo6Mf/EiROOb33rWybf5&#xa;XdgGd2Ovv0fgCWd/OhcO0Kaj626IQ0hpBLVNJki93nfb/1FPWMipCDOFHAq8AvjjC5lSkiVqrkQaW5SJ&#xa;KR5uHrHC1IIh7IOrx5FSDPQlblJa2GMaohFcMZp/RBSJUqIpKUoYOnjZCQfSZGgUA2akKpQQiQtRWBcP&#xa;bWA5MUgQdZRhzZCqkEJkbQUhXHaaosQmABFpIRISDUyRUt2R5nc17mP3OkJaRrGBUChJtNCGASkjHqtw&#xa;yCkJdG+NiHriMgEcJNR6zAIaUk1XdybEE3QlWoKYwKUNhN1OyKkClRDJC2FLuxdCgO30rWBCakGJUTSc&#xa;qj2U5jAGFhHp9ZhENKSKCGS1sIYXdy7AJ5Q1wvTGzSOhBDNsCKPkighktbC6Y7whchuGZzTzYEJqRYlR&#xa;ELWCR4Q6DwoQgorWWOkhEhaCqe7GxUkBwQoVEMkG1QkGpNHRkYyJ+FWVVJQQiT/f3tnEhvHsd7xr7pn5&#xa;cxwKC7D4S5Sq2mHkvVEQAoQQAGSPAQI8PCAyJBixYHgc4DEViwY1iFGjAA5JAjgSxwYkA+0JUiBkVvs2&#xa;LkZeHYkS9FOySIpS+bOETnkLFymu3OgmmrWVFVXd8/CIb8fMOju6pqqr6ur6l9f9YZsE0hOwSlTZMeyu&#xa;lpYPXHiRKOXNFAQkZrCIArgkxccsgR0Q6u2FQhSFVI66K+88koTbPYMRVOkRTfeoCAiNQUxDLzLlEdeQ&#xa;UFEdiyGbkAkEsEpU2TnYBAD36DLY00FTUNBRHYmc2ld2bNnT1IQBW+qQbYZBlZZHsqKAgX0EJEdSlpZ8&#xa;0UikSjIT5kWgb0LUlsogF+E50BWVdBQEJEdyqoW9MdiseiLTZwyRbY/Ol5D5KLoKhS0QrXNQJCqsLiiQ&#xa;Tja0OYlDRREpKYghADBi4hMSMEH6B8iO5VcQYdAKBT3kgYKIoJsE1RdhQJKIrJDWVzRIRwNm49dmNNIj&#xa;t5pioKI1Bj4qhoeRFehgEWD7FByazoEVCVqCcJriMg2h6Ac8iC6Chq2aGSHkivoEPIHw17S8JXKGASpC&#xa;IYB+LELNj5QoKBi4SA7k1Reg1gkHIfiKVMa1vSpAYAeIlJj6IQAQUVkQogKBUWtthkIUrOgICI1BTEA8&#xa;KkLNgooYAQC9hERBGGCgojUFIZC8APBHAhRQQuFqm0GgtQsKIhITbH+cu9qW7E1UUABI1xXbTMQpNoY4&#xa;PKNxyiISE2hE3wsn4tCAKKxaluBIFsFnjByBRMFEUG2CcRQQK9HQUR2PLTgSXuMKIhIjUHwXaYcCAEg8&#xa;aZqm4Eg1cawLGlhpONtioOCiNQURDGAGDhpSqMvAGCxIAgAFAsdvc4FBRGpKQxDwc8/MTDSBAyiV9sMB&#xa;NkKGMDw/kBi2tQURPpFqNZ11otRRW8BQJDyQQwgWO2K0JYADB1dRASBdeHTLessb5E5fYoeIlJTGAD4Z&#xa;D6LJQUMAz1EBIF1MTQsS54IFuFVEHFIilQUQgAIYMdPoy8R0LFcEASALYYA7CnUTRrmVhBRCJGqYBgEP&#xa;UQGZFUFQ8dvISIIAGjAF0XgbAOAc0F0dIESQZDKQJYJaHqh2mYgyFZAB74oluwuU9ZtqyiKSEUxFAKGj&#xa;h4ijbGsQgGfu0B2MAcag7CUza3AuhjqwBZDoSi6/R6i63fFIYgX1t9lilWPRllT0UNEdiT1QRX+Yk800&#xa;xZdm/jXf/nnv4PNgsi6wQaAo2F2gihU1LNnzyYX0pk8AHj6SjGCyGIQgs8hMlALKmgGXkNEdg5+hcCve&#xa;/yrf9gRWf6fb/77H371299+AwBrsC6I5o/2FAHYs5wGgDsPcSOBnp6eyALe8odUEGLgq9uYrKmwpmNTR&#xa;HYGhxMh+M2+UGZydOw/Dw/85t9GR0ezAFB48aPFkHfHKdDrTgVxk7uZTCajWgGnTpHKoSsGAH4PsQhFU&#xa;6AAOGWKbG+SER+c6o1kQmr20d//7d989Omnnz6Fl0K49uJHi6LoMYxN+Cw7iCUCYUQumnvt6+tLzi5oq&#xa;teDRBB5CBB8RVkRiuEDzVirthkIUhbqfAr8UXt4+Vi3P/NfX375j2+99dZ38FIENca6KYqim2sAKE/Rk&#xa;4cYi8WiaWXN7Y05COIYQhQg6CEWoeg+0HAqGdmG/H6bWviTvvrc04cP/6MleuQT2Cx6VvGjl6IpUyZOb&#xa;qqhPUQ9EolEZrWgH2DF8UEiCFI6FEOBVZyrQbYRfQ0BOHWgLrOcXrjx13/1l//05ZdfzgBfBM11HTbfV&#xa;LOhV2BzhymAu2uIG79oQ3NfKo3XLZDKYRgGGOgJFaEQFXQVFRGpfeqDKvxZZ12uvxlmP7/47x+98847t&#xa;6B4KpTlDfLuLrXzEG1vqrFeU7T+rC6o7g8G63NreD0HqRxEIUDwPq4iCChQ8OPVC6S2+YNOn/bHPbGlB&#xa;z9eu9i678RlKBY/q0do9QpNQbQuZW6k2bTNakFWMSSWMFoUNZ/fX58vVHa6tCmswoHGIByoJ8stEVWbz&#xa;Wrqw0Uj9PD5CqTy+BzWdseAreEhxtU4dPu7oF1rX4774lq6kFYn1InQ07VnkNbSFbdHARWMYBAA1ttIc&#xa;/hl024Kq9Bk2W4her45rujkxRsOmlRQG+JRT88SL6Qz+fFlQx/NQOTZ4io8W1ora3tsCquQjPihryEAP&#xa;X7IdseJ4uUYKm0/wj6Hz6Ymvjn5p3/+8XfffTcPm0WPFkDe4xWyj1qwtoHA5te3EUuYua6++PksPz8AB&#xa;DK5/A8fXVvYVe6KbwrgwXoVVJ+6Oj45ffv+7RvXRkZGpvfs2dPaP3BksKOtdUDXdP+DdIGUSyCtJ7DbZ&#xa;+Qi0fUOZTarqXNraiiVL0Aqr8HciyVSDK8MTcyyNLdTVFnm/u8u1I/Ow/I7P1XQ6s0CuFvdDaqqrv4y/&#xa;cvt+zfuv6yHR/oHO1s7B3Rd948Vxki5BDKuxqFJbYR2fzu06q3ZFmhR4tH4hhgsZfPpdD43Z25n0pnxp&#xa;eczT8ztqampqdHR0Slz+/r165NDQ0NT4OztU5u+j3r69Om2EydOdB0+fLi/saNroLWhYbeqkOhEbm15Z&#xa;GklMJlR/VPZAowurDo+3q6YH7rq/ZDwa9r+5uByIqQGCJDc/NLSxNTTJ9eHh4cff/3114+/+OIL6zFwb&#xa;60Hxnddy2l/qTEHPOZAp9mvLbdEVA0AYKUAsBVF3XoOD7SE8i1BJUiA5BYyS+NzE+M/jIyMPPz222+HP&#xa;/nkk3HY7AHSgkhPi4reSkN/E5FeL4L14V/rT3nxY4piNrd8bWa1EPzlua7M61BXCkEwBfBgnZI/2KSCo&#xa;iprE1Mztx7eu/XD5cuXb12+fJnbcE+fPp08derUof39A8fak4lDuqb7h1MaDOf0sFOBZDVCMCBvNsIHD&#xa;x6MpFKpDMD64yft7e2t8abWnmhDrL0+FG6pj9bVL6Qz+bmCoc+ldWXWUMI7TTDtynB4ePjx3NxcFgDA9&#xa;Fb27t3bmkwmk2Ya9Y2J3dGGWLu5HQ+FmmPRSNzcTmfS+efwXF8xVkhKTdUt6yswU5iBAhRgYm3Cte2mA&#xa;Hbr3fkutQsURVkbnxm/9eDmg/+9evXqzUuXLpmCQtdFslEPB/Yf60h0HNJ13f9MewZPladhpwKZ8CWg1&#xa;ZeAxkKT1upPLDcrzQFCSG5+aX5i8snk9eHh4cdfffXVyKVLlyaBfwMcbSdPNOwEkXbNWR8WNwfT0NnZG&#xa;Tp37lz/oUOH9ia7el9riMV7k4mGrieLmezUnKZMFEh4LL0KzxbXIFfQwa8Q6GsIQFfMD90ByCcbfdruh&#xa;kh0dmFhKpVKP3o+Pf7o2rVr9z///POfrl27tiR5vFKCSK0rAEC6uroC77777qsDAwP72rr7XrWzv1TQg&#xa;md69M2+dS94MZNbXFzOz2YWlibSqemfJyYmps0BTl1dXeDIkSOvNHV2/14iHu/1qUqkkqJudw7nZyYe3&#xa;rhx4+7Q0NCj77//fhHYU50s8RNdJ2QJoUw7KIIlhgCbPUSrIFqF0f/hhx/2vvbaaz3JZLJ7165dnaFow&#xa;95gJNgdC4YTsUg4vpDO5FMaaLMLmsoTBFoAVZ+6Oj41c+un+7e/v3Llys2hoSFrQ6cPyLpOV3LlzJkzb&#xa;W+88cbr+/oHjnUkE4e0ghagBVK2EQ4NDT2+fv36kqQNAADkzJkzyaNHj7b19fUlk8lkMtaY2B2NRzvi4&#xa;brmWCQchxJglrFhrD+LYIqvuZ/2sMohxi7KUKbjIjbrBADgzTffbBscHEx2dHQ09vT0dAcjwV3Nrc39P&#xa;tUXSDQkugAAnmSfZAAAplanw1qwoE4XZmBFX4GUloKsngWAYgFUVXV1cmby1vDtYbMemgMxeuRpXbI62&#xa;o16eHDg4LG2RNshTdMCtED6iA/afe3rAqgl8vW+eq070h2dW5ibmk/PP5odn2WJgWgEzCpf0bPFrHNAI&#xa;yuIG8fOinfhwoV9x48f39fW2dmb6Oj8VX0o1BWL1AWz+by2kMuPzc9M33s6Nvbg7t27P58/f/4e55jsn&#xa;ivzIojC3wcffLBhf2tn1xHTflaBucH08E3P3vToXXjypLOzM3ju3Ll+N6IuM/Xe0qBudCZNKqj+gBqYz&#xa;+aezM/M3Hs6Nvrgzp07P7///vv3oFi4WD+eMNLrrOuEomcNASTrOF0RrGE8L5E1feqzhKtm/Lfffrvj6&#xa;NGj7b29vW2JRKIt0tjUG4lGO+tD4RZTEJay+fTk3OzNkfv3fnflypWbn3322YTFaMcuL2U3gGXEevbs2&#xa;baTJ08e2dP/6vG25pbXY5FwfKMRzs7dfTY28uDu3bs/v/fee/eogpQdeVptkFnahdly5syZtsHBwQ2Pq&#xa;re3t629vb1V19c/CWGKsLm/lGJsItGRAbDLkTewAGCXAa+sRHUYPv7449d1XSeDg4P9gUAg0NLRcsgf8&#xa;EejgWh7LBqrAwDI5DPp6dnpm4/uPfrd1atXb1y8eNEciLFsp2/h5tlIX34gAEDOnj2bPHny5JH9r+4/3&#xa;trS+no0HI3n8jktnU+PpaZT9549eXb/zp07T8+fP3+XUVZWIWTdSi4SBjtBpHEySGEJIk9o6P/w4AkfT&#xa;xiBsWTBEnZpQeTEY6XFyos+PnqddY6cnje7Pp1cuHBhL2tQYk1kKZtPLy7nZze2F5YmsgtzY+b21NTU1&#xa;NjY2KQ5u/Pjjz9OXLx40TpwpOsqLYjmuvl4hHVJi57stUKRGIrKbFNBWbcBikd51p9VFK3iaIYrlmVRZ&#xa;0DlYzWS1dnQI3E6ruiYiqZwBMdrzYNXIcstiPS6HaLRukw8uzAevEYs01HZDWys26UQRNZ/WHXPuu7Ud&#xa;jtBFHWoLHusafLyc+oZso5TlB8PUV1yKoBOBNG6LnPMwAmj7RbVI9G5Y8VhpeOEigoiFdeuX6Lz4tVP1&#xa;ra1rvKmNulvF1oF0Cqgoi9YiAZH9DoXu8curAfCiwcv9lsFkSWG9M07dDq8ii+r9rKVwI0gsmwU2cCyA&#xa;2zi0et21KIg8uKy0rYrI9H5LIUgym5blzJ10I0g0nnLCLRIEEX5sPabiM6Jm0EJTzx4x2VXl+h9PFhtw&#xa;k7s7MSel5Ysdv2PKA4Pu0EKMPYDY93ODrv2T/9oIdMY+0XXBnUqrjVPT9CCSAshvU+nts2fAi9V3RQ/k&#xa;XfIyoPV0HkeImud1+isHiKdPwvZjkWmwdl12rz/OUFGGO1EVzZfkRiKwuzisNIX2Skz8JA5B3SeboVQV&#xa;hBpO+3KnZcn6xqmqH46FT5euKgeORFEej8PJ6Ivqks0MnVLdN7obZlBjh08+90MZGSOhReXXpfJmyeEA&#xa;MWCxRIyWiB5HqDdO0l52iCNz/JHWqQIlagOmwvKaohi2a9YlmY6Mp0A7yCBE8bDKoTW/IGzzbJDtJSxw&#xa;WoHb73cgii77TRfUUfrVBB56YpsEnXE5RRE65IeGPLso9sBbadbQRTZ4aS+yrYpE7tzYtfOeOeIh11n5&#xa;0b8WfmK7LcTQdb/KyWIdmwFQbQTRjc/Oh2ePbxtLqJXW/ASMQ/MKqA6sD1Cu5GxqFCteTkRIzoPVockw&#xa;q5iigpbpqGJbNiugiizFCHjmfDW3QoivZQdifI6Vacdj8g2ujNg2cwLs8tHFpnzYNce3AwIgBHmVDTs2&#xa;oDTQZZs+xZhN2iRiUsjY2+pBdFcioSLty0Txlqn7XCNVRDNxOjCEAmA1TCrIJrb1vRYBe6kUHn20LBOv&#xa;l2nyUpXdsTmRhCdhNlRCsFzK4jWbbdLXrpOPUTeutOBkMzSjSDybGHZxUuf16mw7OSlx6LUgsgK8zIgc&#xa;Fp3eGGifGW9RtFSlL4d1RZEel2E7CDSXPIGyKI25aT/8FJGm+C9us0KoYwgIJ6qoYXIjSA6PXjaXpYd9&#xa;H4eMkIoU9iyXo1MuGw+TvJym6+o8nk5h7KCyNvvxBtx4yGylna4EUMrsu1DFJ+3XyacRmSv7GBQpn7KH&#xa;pfoeMspiKJ1Xvp2VFsQy+khipaiMKf1W2afEJm3AYsSt15XtAqibGVy6m3I2GQniLQtNLUmiHZplKKx8&#xa;nBSyWXExLpP1k5ZD5H3H1mBp+O6GZjxbORhJ4gsO9x0oOUQRFaYl7pXymN2Y6vszAQvfTuqJYh0XN5+O&#xa;m+7dmPXZpz28aWqw0LcvB6fZ6ibwucVqtuRAS/fUniIdmE8O5zsq4Qges1XRkB4YaJwWZwOLkohiKJwk&#xa;WdrNxhzI4iydvDScbPfxE2dFu0vRVvkhXsVRFa47LkrpSB6iSvrtdNhpRBEXpjsufI6m+EKtx2zzGjXi&#xa;yDS624KQXbKRpQ/L9yrhyjzH7eUo2OyIjtSdyOEpfQQZcNkGqOTxuy2E2IhO2DkxZXZJ7PfxKsIlMpDl&#xa;NlXDkHkhZdy1oWmlB4iHW4XJsJt3+1lkFN2nBSC01GFFyFy6i6zKFWFraSH6AY3AugmjokTAbHbJ0rH6&#xa;yDCjafspvHKCqITO1jYDci8CGIp2GqC6BQvguhkH49KeohuwkR5e23/VRE/Fk4+se22ML2MPMpR0UvhI&#xa;Xq1wWu8auJ2ysNp+bkpi1KMfAG82e6kA3XrIW5Fyi2I5cbLZYxKe4hOKdWgDEB+YLJV66kQrx6im3AZv&#xa;IwGS9Upyubnhkp2DJXIy835KtU1RK/xRHi1vZR10Ys4bhUP0el/Knl8pRS+cnuIbimF/TJ2bsUZDCncN&#xa;s5SXUso1bUNmby8UgkPsRRUcxRe7UrvpsG7beBOqVQ93DKdC5SvLm6luuQ0rlO2mtibeK2HW6mebuBky&#xa;tRKOStLuQuqVKPScrCVp5ScslUq/FYdrQNs7bpYCmq5Ptey7XbU8kClrPw/OEJDdIvMWxkAAAAASUVOR&#xa;K5CYII=&quot; width=&quot;452&quot; height=&quot;304&quot; />&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>"/>
+    <Option name="HELP_URL" type="QString" value=""/>
+    <Option name="SHORT_DESCRIPTION" type="QString" value="Ciao cucu"/>
+    <Option name="errori" type="QString" value="OUTPUT del processing è un layer Linestring che rappresentano gli errori"/>
+    <Option name="input_poligoni_fotointerpretate" type="QString" value="Poligoni fotointerpretati"/>
+    <Option name="input_sezioni_di_interesse" type="QString" value="Sezioni rettangolari interessate"/>
+    <Option name="poligonityndiss" type="QString" value=""/>
+    <Option name="tolleranza" type="QString" value="Valore in metri per l'aggancio tra layer, utile per l'intersezione."/>
+  </Option>
+  <Option name="internal_version" type="QString" value="Version2"/>
+  <Option name="modelVariables"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="Check Bordi Interni"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="errori" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="data_type" type="int" value="-1"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="Errori"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value=""/>
+      <Option name="metadata" type="Map">
+        <Option name="_modelChildId" type="QString" value="native:deleteduplicategeometries_1"/>
+        <Option name="_modelChildOutputName" type="QString" value="Errori"/>
+        <Option name="_modelChildProvider" type="QString" value="native"/>
+      </Option>
+      <Option name="name" type="QString" value="errori"/>
+      <Option name="parameter_type" type="QString" value="sink"/>
+      <Option name="supports_append" type="bool" value="false"/>
+      <Option name="supports_non_file_outputs" type="bool" value="true"/>
+    </Option>
+    <Option name="input_poligoni_fotointerpretate" type="Map">
+      <Option name="data_types" type="List">
+        <Option type="int" value="2"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="INPUT poligoni fotointerpretate"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value="Poligoni fotointerpretati"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="input_poligoni_fotointerpretate"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="input_sezioni_di_interesse" type="Map">
+      <Option name="data_types"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="INPUT sezioni di interesse"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="help" type="QString" value="Sezioni rettangolari interessate"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="input_sezioni_di_interesse"/>
+      <Option name="parameter_type" type="QString" value="vector"/>
+    </Option>
+    <Option name="tolleranza" type="Map">
+      <Option name="data_type" type="int" value="1"/>
+      <Option name="default" type="double" value="0.01"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" type="QString" value="tolleranza"/>
+      <Option name="flags" type="int" value="2"/>
+      <Option name="help" type="QString" value="Valore in metri per l'aggancio tra layer, utile per l'intersezione."/>
+      <Option name="max" type="double" value="0.01"/>
+      <Option name="metadata"/>
+      <Option name="min" type="double" value="0"/>
+      <Option name="name" type="QString" value="tolleranza"/>
+      <Option name="parameter_type" type="QString" value="number"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder" type="StringList">
+    <Option type="QString" value="input_poligoni_fotointerpretate"/>
+    <Option type="QString" value="input_sezioni_di_interesse"/>
+    <Option type="QString" value="tolleranza"/>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="input_poligoni_fotointerpretate" type="Map">
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="320"/>
+        <Option name="component_pos_y" type="double" value="15"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="input_poligoni_fotointerpretate"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="120"/>
+      <Option name="component_pos_y" type="double" value="60"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="name" type="QString" value="input_poligoni_fotointerpretate"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+    </Option>
+    <Option name="input_sezioni_di_interesse" type="Map">
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="540"/>
+        <Option name="component_pos_y" type="double" value="15"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="input_sezioni_di_interesse"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="409"/>
+      <Option name="component_pos_y" type="double" value="62"/>
+      <Option name="component_width" type="double" value="200"/>
+      <Option name="name" type="QString" value="input_sezioni_di_interesse"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+    </Option>
+    <Option name="tolleranza" type="Map">
+      <Option name="color" type="QString" value=""/>
+      <Option name="comment" type="Map">
+        <Option name="color" type="QString" value=""/>
+        <Option name="component_description" type="QString" value=""/>
+        <Option name="component_height" type="double" value="60"/>
+        <Option name="component_pos_x" type="double" value="760"/>
+        <Option name="component_pos_y" type="double" value="15"/>
+        <Option name="component_width" type="double" value="100"/>
+        <Option name="outputs_collapsed" type="bool" value="true"/>
+        <Option name="parameters_collapsed" type="bool" value="true"/>
+      </Option>
+      <Option name="component_description" type="QString" value="tolleranza"/>
+      <Option name="component_height" type="double" value="30"/>
+      <Option name="component_pos_x" type="double" value="474.5"/>
+      <Option name="component_pos_y" type="double" value="404"/>
+      <Option name="component_width" type="double" value="119"/>
+      <Option name="name" type="QString" value="tolleranza"/>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+    </Option>
+  </Option>
+</Option>
