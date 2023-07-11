@@ -231,6 +231,7 @@ A partire dallo shapefile delle regioni italiane (20 regioni ISTAT 2023) e dalle
 ## DATI e PROGETTI
 
 - <https://github.com/pigreco/workshop-estate-gis-2023/raw/main/risorse.zip>
+- [slide](https://docs.google.com/presentation/d/e/2PACX-1vQ4IdONHOkPOZwm-1eU5SvI6s75D0J0wfcOx8N7RW9yVVScYGinzelFQQIviES2cyIlU3YvUsMh0R37/pub?start=false&loop=false&delayms=5000)
 
 ## RIFERIMENTI UTILI
 
