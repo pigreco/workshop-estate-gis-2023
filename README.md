@@ -1,7 +1,5 @@
 # workshop estate gis 2023
 
-------------------> IN COSTRUZIONE <--------------------------------
-
 <!-- TOC -->
 
 - [workshop estate gis 2023](#workshop-estate-gis-2023)
