@@ -18,6 +18,8 @@
       - [Che cosa è il Print Layout di QGIS?](#che-cosa-è-il-print-layout-di-qgis)
   - [DATI e PROGETTI](#dati-e-progetti)
   - [RIFERIMENTI UTILI](#riferimenti-utili)
+  - [Iscritti](#iscritti)
+  - [dirette](#dirette)
 - [DISCLAIMER](#disclaimer)
 
 <!-- /TOC -->
@@ -238,6 +240,19 @@ A partire dallo shapefile delle regioni italiane (20 regioni ISTAT 2023) e dalle
 - **BLOG PIGRECOINFINITO** : <https://pigrecoinfinito.com/>
 - **MASTER GISCIENCE** : <https://mastergiscience.it/9821-2/>
 - **ISTAT** : <https://www.istat.it/it/archivio/222527>
+
+## Iscritti 
+
+- iscritti a Estate GIS 2023 : 3485
+- partecipanti al workshp : 350
+- visualizzazioni Facebook : 185
+- visualizzazioni Youtube : 603
+
+## dirette
+
+- **Facebook** : <https://www.facebook.com/MasterGIScience/videos/950943209451089>
+- **YouTube** :  <https://www.youtube.com/watch?v=CFTP9Yt286o>
+
 
 # DISCLAIMER
 
